@@ -1,0 +1,537 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: montserrat;
+    color: #0078D4;
+    
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+header{
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    padding: 2px 0;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+
+}
+.header_logo{
+    font-weight: 800;
+}
+
+.nav_list{
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    font-weight: 800;
+}
+.nav_item{
+    margin: 0 8px;
+}
+.nav_link:hover {
+    color: #000;
+    /*kuch badiya effect dalenge hovere wala */
+}
+.nav{
+    position: relative;
+}
+.header_toggle,
+.header_close {
+    display: flex;
+}
+@media screen and  (max-width: 768px){
+    header{
+        height: 48px;
+        justify-content: space-between;
+        padding: 0 28px;
+    }
+    .logo img{
+        justify-self: start;
+        /*width: 30px;    problem h isme mujhe koi idea nahi kyu hori h 
+        https://youtu.be/CX81A39RqLs?si=CKbDv3bY85PXKJml */
+
+
+    }
+}
+
+#main{
+    position: relative;
+}
+#page1{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center ;
+    justify-content: center ;
+    flex-direction: column;
+    text-align: center ;
+    z-index: 10;
+}
+#page1 h1{  
+    font-size: 90px;
+    font-weight: 900;
+    position: relative;
+}
+#page1 h1::before{
+    content: "MICROSOFT STUDENT CHAPTER";
+    position: absolute;
+    color: #203A61;
+    top: -5px;
+    left: -5px;
+    -webkit-text-stroke: 2px #c8e6fc;
+    z-index: -1;
+}
+#page1 h2{  
+    font-size: 25px;
+    font-weight: 800;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+#page1 p{  
+    font-size: 20px;
+    font-weight: 450;
+    width: 50%;
+}
+#page2{
+    height: 100vh;
+    width: 100%;
+    z-index: 10;
+}
+/* project.html css */
+#heading{
+    margin-top: 100px;
+    margin-bottom: 70px;
+}
+#heading h1{
+    font-size: 8vw;
+    line-height: 1;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    position: relative;
+    font-weight: 1000PX;
+    
+}
+#heading #secondh1{
+    margin-left: 130px;
+}
+.blocktext{
+    width: fit-content;
+}
+.blocktext h5{
+    text-align: right;
+}
+#chhotiheadings {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-top: 10px;
+    padding-right: 50px;
+}
+
+#chhotiheadings h5 {
+    text-transform: uppercase;
+    margin-top: .5vw;
+    font-size: 1vw;
+    text-align: right;
+
+}
+.elem {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 3.5vw 3vw;
+    padding-right: 0;
+    border-top: 1px solid #888;
+}
+
+
+.elem h1 {
+    text-transform: uppercase;
+    font-size: 7.6vw;
+}
+.elem h5{
+    margin-right: 30px;
+}
+
+.elemlast {
+    border-bottom: 1px solid #888;
+}
+
+.elem img {
+    opacity: 0;
+    pointer-events: none;
+    height: 140%;
+    z-index: 999;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+#scroller{
+    /* background-color: red;  */
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    z-index: 10;
+}
+#scroller::-webkit-scrollbar{
+    display: none;
+}
+#scrollerin{
+    display: inline-block;
+    white-space: nowrap;
+    animation-name: scroll;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+#scroller h4{
+    display: inline-block;
+    font-size: 100px;
+    font-weight: 1000;
+    font-family: gilroy;
+    margin-right: 10px;
+    transition: linear 0.4s;
+    color: black;
+    -webkit-text-stroke:2px rgb(255, 255, 255);
+}
+body::-webkit-scrollbar{
+    display: block;
+    width: 7px;
+    background-color: #000000;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #0078D4;
+    border-radius: 50px;
+}
+#scroller h4:hover{
+    color: #0078D4;
+}
+@keyframes scroll {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+#page3{
+    width: 100%;
+    height: 130vh;
+}
+.page3 h1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 7vw;
+}
+.page3 h2{
+    margin-bottom: 100px;
+}
+
+/* navpage.css */
+#navpage{
+    height: 100vh;
+    width: 100%;
+}
+
+/* member.html */
+#about {
+    align-items: center;
+    gap: 50px;
+    color: #fff;
+    padding: 10vw 10vw;
+    width: 100%;
+    background-color: black;
+}
+
+#textabout {
+    width: 25rem;
+}
+
+#textabout h5 {
+    text-transform: uppercase;
+    opacity: .6;
+    margin-bottom: 10px;
+}
+
+#textabout p {
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+#about img {
+    width: 200px;
+    border-radius: 100px;
+}
+
+#textabout a {
+    padding: 12px 22px;
+    border: 1px solid #fff;
+    border-radius: 100px;
+    color: #fff;
+    font-size: 12px;
+    text-decoration: none;
+}
+#member{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background-color: black;
+}
+#member h1{
+    position: relative;
+    display: none;
+    align-items: center ;
+    justify-content: center ;
+    flex-direction: row;
+    text-align: center;
+    z-index: 10;
+    
+}
+
+/* event.html */
+#main1 h1{
+    margin-top: 35vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+/* FOOTER */
+#footer{
+    height: 40vh;
+    width: 100%;
+    background: linear-gradient(to left bottom,#1E375E, #0078D4);
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 150px;
+    padding: 0 100px;
+}
+#footer h6{
+    position: absolute;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+
+#footer img{
+    position: absolute;
+    left: 0;
+    height: 100%;
+    z-index: 0;
+}
+#f1 img{
+    height: 150px;
+    position: relative;
+}
+#f1,#f2#f3#f4{
+    width: fit-content;
+    position: relative;
+    z-index: 99;
+}
+#f2 h3{
+    font-size: 1.6vw;
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 900;
+    margin-bottom: 8px;
+}
+  
+#f3 h3{
+    font-size: 1.6vw;
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+#f4 h4{
+    font-size: 1vw;
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 600;
+    line-height: 20px;
+    margin-bottom: 8px;
+}
+#f4 h6{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-family: Lobster;
+}
+/* icons */
+*:focus,
+*:active {
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  place-items: center;
+  background: linear-gradient(315deg, #ffffff, #d7e1ec);
+}
+
+.wrapper {
+  display: inline-flex;
+  list-style: none;
+}
+
+.wrapper .icon {
+  position: relative;
+  background: #ffffff;
+  border-radius: 50%;
+  padding: 15px;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #ffffff;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background: #E4405F;
+  color: #ffffff;
+}
+
+.wrapper .github:hover,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip::before {
+  background: #333333;
+  color: #ffffff;
+}
+
+.wrapper .linkedin:hover,
+.wrapper .linkedin:hover .tooltip,
+.wrapper .linkedin:hover .tooltip::before {
+  background: #0A66C2;
+  color: #ffffff;
+}
+
+/* page4 */
+.page4{
+    min-height: 80vh;
+    width: 100%;
+    z-index: 9;
+    position: relative;
+    padding: 50px 100px;
+    gap: 50px;
+    justify-content: center;
+}
+.elem5{
+    
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    position: relative;
+}
+.elem5 img{
+    position: absolute;
+    opacity: 0;
+    transition: all ease-out 0.5s;
+    transform: translateY(10%) rotate(2deg);
+}
+.elem5 img:nth-child(1){
+    left: 2%;
+}
+.elem5 img:nth-child(3){
+    right: 5%;
+}
+.text-div{
+    height: 16vh;
+    position: relative;
+    z-index: 9;
+    overflow: hidden;
+}
+.elem5 h1{
+    font-size: 7.5vw;
+    font-weight: 600;
+    transition: all ease-out 0.5s;
+}
+
+.elem5:hover h1{
+    transform: translateY(-100%);
+    color: #EDBFFF;
+}
+.elem5:hover img{
+    opacity: 1;
+    transform: translateY(0%) rotate(0deg);
+
+}
