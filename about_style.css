@@ -20,6 +20,7 @@
     width: 300px;
     height: 200px;
     transition: 0.5s;
+    z-index: -1;
 }
 .container .card {
     position: relative;
@@ -30,12 +31,13 @@
 .container .card .face.face1{
     border-radius: 14%;
     position: relative;
-    background: black;
+    background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 1;
     transform: translateY(100px);
+    
 }
 
 .container .card:hover .face.face1{

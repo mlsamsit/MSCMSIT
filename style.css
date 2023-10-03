@@ -6,74 +6,129 @@
     box-sizing: border-box;
     font-family: montserrat;
     color: #0078D4;
+    z-index: 100001;
     
 }
-a{
-    text-decoration: none;
-}
-ul{
-    list-style: none;
-}
-header{
+.logoo {
     display: flex;
-    background-color: white;
+    align-items: center;
+    position: absolute;
+    top: 40px; /* Adjust the top value as per your layout */
+    left: 15px; 
+    z-index: 1000; /* Ensure the logo appears above other elements */
+    color: white;
+}
+  
+  .logoo img {
+    width: 80px;
+    height: 80px;
+    /* margin-left:-720px; */
+    position: absolute;
+    
+}
+  nav{
+    z-index: 9999;
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background:rgba(0, 120, 212, 0.95);;
+    align-items: center;
     justify-content: space-between;
-    padding: 2px 0;
-    align-items: center;
-}
-.logo{
+    padding: 0 50px 0 100px;
+    flex-wrap: wrap;
+  }
+  nav .logo{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+    margin-left:35px;
+  }
+  nav ul{
     display: flex;
-    align-items: center;
-}
-.logo img{
-    width: 100px;
-    height: 100px;
-    margin-right: 10px;
-
-}
-.header_logo{
-    font-weight: 800;
-}
-
-.nav_list{
-    display: flex;
-    align-items: center;
-    gap: 70px;
-    font-weight: 800;
-}
-.nav_item{
-    margin: 0 8px;
-}
-.nav_link:hover {
-    color: #000;
-    /*kuch badiya effect dalenge hovere wala */
-}
-.nav{
-    position: relative;
-}
-.header_toggle,
-.header_close {
-    display: flex;
-}
-@media screen and  (max-width: 768px){
-    header{
-        height: 48px;
-        justify-content: space-between;
-        padding: 0 28px;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+  nav ul li{
+    margin: 0 5px;
+  }
+  nav ul li a{
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    color: #0078d4;
+    background: #fff;
+    
+  }
+  nav .menu-btn i{
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+  }
+  input[type="checkbox"]{
+    display: none;
+  }
+  @media (max-width: 1000px){
+    nav{
+      padding: 0 40px 0 50px;
     }
-    .logo img{
-        justify-self: start;
-        /*width: 30px;    problem h isme mujhe koi idea nahi kyu hori h 
-        https://youtu.be/CX81A39RqLs?si=CKbDv3bY85PXKJml */
-
-
+  }
+  @media (max-width: 920px) {
+    nav .menu-btn i{
+      display: block;
     }
-}
+    #click:checked ~ .menu-btn i:before{
+      content: "\f00d";
+    }
+    nav ul{
+      position: fixed;
+      top: 80px;
+      left: -100%;
+      background:#0078d4;
+      height: 100vh;
+      width: 100%;
+      text-align: center;
+      display: block;
+      transition: all 0.3s ease;
+    }
+    #click:checked ~ ul{
+      left: 0;
+    }
+    nav ul li{
+      width: 100%;
+      margin: 40px 0;
+    }
+    nav ul li a{
+      width: 100%;
+      margin-left: -100%;
+      display: block;
+      font-size: 20px;
+      transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+    #click:checked ~ ul li a{
+      margin-left: 0px;
+    }
+    nav ul li a.active,
+    nav ul li a:hover{
+      background: none;
+      color: cyan;
+    }
+  }
 
 #main{
     position: relative;
 }
 #page1{
+    
+    position: absolute;
     height: 100vh;
     width: 100%;
     position: relative;
@@ -96,7 +151,7 @@ header{
     top: -5px;
     left: -5px;
     -webkit-text-stroke: 2px #c8e6fc;
-    z-index: -1;
+    z-index: -10;
 }
 #page1 h2{  
     font-size: 25px;
@@ -110,9 +165,10 @@ header{
     width: 50%;
 }
 #page2{
+    background-color: black !important;
     height: 100vh;
     width: 100%;
-    z-index: 10;
+    z-index: 9099999;
 }
 /* project.html css */
 #heading{
@@ -212,6 +268,7 @@ header{
     margin-right: 10px;
     transition: linear 0.4s;
     color: black;
+    z-index: 9999;
     -webkit-text-stroke:2px rgb(255, 255, 255);
 }
 body::-webkit-scrollbar{
