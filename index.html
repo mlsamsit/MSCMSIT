@@ -11,36 +11,31 @@
 </head>
 <body>
     
-    <nav>
-      
-        <div class="logo">
-           MSC
-        </div>
-        <input type="checkbox" id="click">
-        <label for="click" class="menu-btn">
-        <i class="fas fa-bars"></i>
-        </label>
-        <div class="logoo">
-            <img src="images/MSIT-depositphotos-bgremover.png" alt="">
-            
-        </div>
-        <ul>
-         <li><a class="active" href="index.htm">Home</a></li>
-             <li><a href="event.html" class="nav_link">EVENT</a></li>
-             <li><a href="project.html" class="nav_link">PROJECTS</a></li>
-             <li><a href="member.html" class="nav_link">MEMBERS</a></li>
-             <li><a href="https://medium.com/@anushatomar02130" class="nav_link">BLOG</a></li>
-             <li><a href="contact.html" class="nav_link">ABOUT US</a></li>
-        </ul>
-     </nav>
+    <div id="main">
+        <header>
+            <div class="logo">
+                <img src="images/MSIT-depositphotos-bgremover.png" alt="">
+                <a href="index.html"class="header_logo">MSC</a>
+            </div>
+            <div class="nav" id="nav_menu">
+                <ion-icon name="close_outline" class="header_closer"></ion-icon>
     
-               
-     <div id="page1">
-        <h1>MICROSOFT STUDENT CHAPTER</h1>
-        <h2>WELCOME TO MSC MSIT !</h2>
-        <P>We're all about making tech simple and events exciting. Imagine hands-on workshops where you bring your laptop and we bring the knowledge, hackathons where your ideas become reality, and cozy coding nights that feel like a digital campfire.</P>
-    </div>
-    
+                <ul class="nav_list">
+                    <li class="nav_item"><a href="index.html" class="nav_link">HOME</a></li>
+                    <li class="nav_item"><a href="event.html" class="nav_link">EVENT</a></li>
+                    <li class="nav_item"><a href="project.html" class="nav_link">PROJECTS</a></li>
+                    <li class="nav_item"><a href="member.html" class="nav_link">MEMBERS</a></li>
+                    <li class="nav_item"><a href="https://medium.com/@anushatomar02130" class="nav_link">BLOG</a></li>
+                    <li class="nav_item"><a href="contact.html" class="nav_link">ABOUT US</a></li>
+                </ul>
+            </div>
+            <ion-icon name="menu_outline" class="header_toggle"></ion-icon>
+        </header>
+        <div id="page1">
+            <h1>MICROSOFT STUDENT CHAPTER</h1>
+            <h2>WELCOME TO MSC MSIT !</h2>
+            <P>We're all about making tech simple and events exciting. Imagine hands-on workshops where you bring your laptop and we bring the knowledge, hackathons where your ideas become reality, and cozy coding nights that feel like a digital campfire.</P>
+        </div>
         
         <div id="page2">
             <div id="scroller">
@@ -131,24 +126,6 @@
     </div>
     
 </div>  
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const page2 = document.getElementById("page2");
-
-        function checkScroll() {
-            const scrollPosition = window.scrollY;
-            const page2OffsetTop = page2.offsetTop;
-
-            if (scrollPosition >= page2OffsetTop) {
-                document.body.style.backgroundColor = "black";
-            } else {
-                document.body.style.backgroundColor = "#d7e1ec";
-            }
-        }
-
-        window.addEventListener("scroll", checkScroll);
-    });
-</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="script.js"></script>
