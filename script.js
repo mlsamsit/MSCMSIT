@@ -25,17 +25,18 @@ function showSidebar() {
   const sidebar = document.querySelector(".sidebar");
   const sidebarIcon = document.querySelector(".sidebar-icon");
 
-  sidebar.style.display = "flex";
-  sidebarIcon.style.display = "none";
+  sidebar.style.display = "flex";  // Show sidebar
+  sidebarIcon.style.display = "none";  // Hide hamburger icon
 }
 
 function hideSidebar() {
   const sidebar = document.querySelector(".sidebar");
   const sidebarIcon = document.querySelector(".sidebar-icon");
 
-  sidebar.style.display = "none";
-  sidebarIcon.style.display = "flex";
+  sidebar.style.display = "none";  // Hide sidebar
+  sidebarIcon.style.display = "flex";  // Show hamburger icon
 }
+
 
 function firstPageAnim() {
   var tl = gsap.timeline();
