@@ -10,11 +10,32 @@ gsap.to("#main",{
     }
 })
 var timeout;
+const sidebarIcon = document.querySelector(".sidebar-icon");
+const sidebar = document.querySelector(".sidebar");
+
+sidebar.style.display = "none";
+
 
 const scroll = new LocomotiveScroll({
   el: document.querySelector("#main"),
   smooth: true,
 });
+
+function showSidebar() {
+  const sidebar = document.querySelector(".sidebar");
+  const sidebarIcon = document.querySelector(".sidebar-icon");
+
+  sidebar.style.display = "flex";
+  sidebarIcon.style.display = "none";
+}
+
+function hideSidebar() {
+  const sidebar = document.querySelector(".sidebar");
+  const sidebarIcon = document.querySelector(".sidebar-icon");
+
+  sidebar.style.display = "none";
+  sidebarIcon.style.display = "flex";
+}
 
 function firstPageAnim() {
   var tl = gsap.timeline();

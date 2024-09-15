@@ -6,21 +6,17 @@
     box-sizing: border-box;
     font-family: montserrat;
     color: #0078D4;
-    
 }
+
+
+
 a{
     text-decoration: none;
 }
 ul{
     list-style: none;
 }
-header{
-    display: flex;
-    background-color: white;
-    justify-content: space-between;
-    padding: 2px 0;
-    align-items: center;
-}
+
 .logo{
     display: flex;
     align-items: center;
@@ -44,35 +40,92 @@ header{
 .nav_item{
     margin: 0 8px;
 }
+
 .nav_link:hover {
-    color: #000;
-    /*kuch badiya effect dalenge hovere wala */
+    color: #000; 
 }
+
 .nav{
     position: relative;
 }
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    display: none; 
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li {
+    width: 100%;
+    line-height: 50px;
+    padding-left: 20px;
+    font-weight: 700;
+}
+
+.sidebar a {
+    width: 100%;
+}
+
+.sidebar-icon {
+    display: none; 
+    cursor: pointer;
+    position: fixed;  
+    top: 30px;
+    right: 15px; 
+    z-index: 1000;
+}
+
+@media (max-width: 800px) {
+    .nav_list {
+        display: none;
+    }
+
+    .sidebar-icon {
+        display: flex; 
+        align-items: center;
+        justify-content: center;  
+    }
+
+    .sidebar {
+        display: none;
+    }
+}
+
+@media (max-width: 800px){
+    .sidebar{
+        display: flex;
+    }
+    .nav_list{
+        display: none;
+    }
+}
+
 .header_toggle,
 .header_close {
     display: flex;
 }
-@media screen and  (max-width: 768px){
-    header{
-        height: 48px;
-        justify-content: space-between;
-        padding: 0 28px;
-    }
-    .logo img{
-        justify-self: start;
-        /*width: 30px;    problem h isme mujhe koi idea nahi kyu hori h 
-        https://youtu.be/CX81A39RqLs?si=CKbDv3bY85PXKJml */
-
-
-    }
-}
-
-#main{
+header{
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    padding: 2px 0;
+    align-items: center;
+    width: 100%;
     position: relative;
+    
 }
+
+
 #page1{
     height: 100vh;
     width: 100%;
@@ -183,6 +236,20 @@ header{
     z-index: 999;
     position: absolute;
     transform: translate(-50%, -50%);
+}
+
+@media (max-width: 425px){
+    #home-page{
+        height: 100vh;
+        width: 100%;
+    }
+
+    #heading h1{
+        font-size: 9vw;
+    }
+    #heading #secondh1{
+        margin-left: 0;
+    }
 }
 
 #scroller{
@@ -537,3 +604,5 @@ body {
     transform: translateY(0%) rotate(0deg);
 
 }
+
+
