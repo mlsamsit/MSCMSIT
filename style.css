@@ -581,3 +581,57 @@ header {
     }
 }
 
+@media screen and (max-width: 425px) {
+    #footer {
+        padding: 20px 10px; 
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;  
+    }
+
+     #f1 {
+        display: none;
+    }
+
+     
+    #f2, #f3 {
+        display: inline-block;
+        width: 48%;  
+        vertical-align: top;  
+    }
+
+     #f2 {
+        text-align: left;
+    }
+
+    #f2 ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #f2 .icon {
+        margin: 5px 0;
+        height: 30px;
+        width: 30px;
+    }
+
+     #f3 {
+        text-align: right;
+        
+    }
+
+     #f4 {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+
+     #f4 h6 {
+        display: none;
+    }
+}
+
+
