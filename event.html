@@ -6,32 +6,84 @@
     <title>EVENTS</title>
     <link rel="icon" type="image/x-icon" href="/images/MSIT-depositphotos-bgremover.png">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="event.css">
     <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="images/MSIT-depositphotos-bgremover.png" alt="">
-            <a href="index.html"class="header_logo">MSC</a>
-        </div>
-        <div class="nav" id="nav_menu">
-            <ion-icon name="close_outline" class="header_closer"></ion-icon>
-
-            <ul class="nav_list">
-                <li class="nav_item"><a href="index.html" class="nav_link">HOME</a></li>
-                <li class="nav_item"><a href="event.html" class="nav_link">EVENT</a></li>
-                <li class="nav_item"><a href="project.html" class="nav_link">PROJECTS</a></li>
-                <li class="nav_item"><a href="member.html" class="nav_link">MEMBERS</a></li>
-                <li class="nav_item"><a href="https://medium.com/@anushatomar02130" class="nav_link">BLOG</a></li>
-                <li class="nav_item"><a href="contact.html" class="nav_link">ABOUT US</a></li>
-            </ul>
-        </div>
-        <ion-icon name="menu_outline" class="header_toggle"></ion-icon>
-    </header>
-    <div id="main1">
-        <h1>EVENTS TO BE NOTIFIED SOON !!</h1>
-        
+  <header>
+    <div class="logo">
+        <img src="images/MSIT-depositphotos-bgremover.png" alt="">
+        <a href="index.html"class="header_logo"></a>
     </div>
+    <div class="nav" id="nav_menu">
+        <ion-icon name="close_outline" class="header_closer"></ion-icon>
+
+        <ul class="nav_list">
+            <li class="nav_item"><a href="index.html" class="nav_link">HOME</a></li>
+            <li class="nav_item"><a href="event.html" class="nav_link">EVENT</a></li>
+            <li class="nav_item"><a href="project.html" class="nav_link">PROJECTS</a></li>
+            <li class="nav_item"><a href="member.html" class="nav_link">MEMBERS</a></li>
+            <li class="nav_item"><a href="https://medium.com/@anushatomar02130" class="nav_link">BLOG</a></li>
+            <li class="nav_item"><a href="contact.html" class="nav_link">ABOUT US</a></li>
+        </ul>
+        <div onclick="showSidebar()" class="sidebar-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="40">
+                <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/>
+            </svg>
+        </div>
+         
+        <ul class="sidebar">
+            <li onclick="hideSidebar()"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></li>
+            <li><a href="index.html" class="nav_link">HOME</a></li>
+            <li><a href="event.html" class="nav_link">EVENT</a></li>
+            <li><a href="project.html" class="nav_link">PROJECTS</a></li>
+            <li><a href="member.html" class="nav_link">MEMBERS</a></li>
+            <li><a href="contact.html" class="nav_link">ABOUT US</a></li>
+            <li><a href="https://medium.com/@anushatomar02130" class="nav_link">BLOG</a></li>
+        </ul>
+    </div>
+</header>
+
+<div class="container">
+  <div class="card__container">
+     <article class="card__article">
+      <img src="MSCMSIT\images\30-days-challenge.jpg" alt="image" class="card__img">
+
+        <div class="card__data">
+          <h2 class="card__title">30 Days Challenge at MS Office</h2>
+           <span class="card__description"> Students embarked on an intense 30-day coding journey, creating innovative projects, with top performers winning an exclusive session at Microsoft’s headquarters</span>
+
+        </div>
+     </article>
+
+     <article class="card__article">
+      <img src="MSCMSIT\images\HTM.jpg" alt="image" class="card__img">
+
+        <div class="card__data">
+          <h2 class="card__title">Hack The Mountain</h2>
+          <span class="card__description">An exhilarating session that unveiled the world of hackathons, offering participants a thrilling chance to dive into an exclusive and high-stakes hacking competition, where innovation meets adrenaline!</span>
+
+        </div>
+     </article>
+
+     <article class="card__article">
+        <img src="https://via.placeholder.com/300" alt="image" class="card__img">
+
+        <div class="card__data">
+           <h2 class="card__title">Bytes and Beyond</h2>
+           <span class="card__description">An electrifying orientation where industry expert Sarthak Jain took the stage to inspire and guide students, unveiling a world of opportunities and innovation in tech!</span>
+
+        </div>
+     </article>
+
+     
+  </div>
+</div>
+
+      </div>
+    </div>
+
+    
     <div id="footer">
         <img
       src="./images/dots-footer.png" alt=""/>
@@ -73,6 +125,7 @@
     
     
 </div>  
+<script src="script.js"></script>
     
 </body>
 </html>

@@ -10,11 +10,33 @@ gsap.to("#main",{
     }
 })
 var timeout;
+const sidebarIcon = document.querySelector(".sidebar-icon");
+const sidebar = document.querySelector(".sidebar");
+
+sidebar.style.display = "none";
+
 
 const scroll = new LocomotiveScroll({
   el: document.querySelector("#main"),
   smooth: true,
 });
+
+function showSidebar() {
+  const sidebar = document.querySelector(".sidebar");
+  const sidebarIcon = document.querySelector(".sidebar-icon");
+
+  sidebar.style.display = "flex";  // Show sidebar
+  sidebarIcon.style.display = "none";  // Hide hamburger icon
+}
+
+function hideSidebar() {
+  const sidebar = document.querySelector(".sidebar");
+  const sidebarIcon = document.querySelector(".sidebar-icon");
+
+  sidebar.style.display = "none";  // Hide sidebar
+  sidebarIcon.style.display = "flex";  // Show hamburger icon
+}
+
 
 function firstPageAnim() {
   var tl = gsap.timeline();
