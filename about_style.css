@@ -229,7 +229,6 @@ body {
 /* Card Styles */
 .card {
     position: relative;
-    overflow: scroll;
     width: calc(100% - 200px);
     height: 650px;
     margin: 0px auto;
@@ -797,3 +796,165 @@ border-right: 7px solid #333C42;
 html, body {
   overflow: visible;
 }
+
+
+/* Hamburger Menu Styles - New Addition */
+.hamburger-menu {
+  display: none;
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1000;
+  cursor: pointer;
+  width: 30px; /* Fixed width */
+  height: 25px; /* Fixed height */
+  padding: 0;
+  background: transparent;
+  border: none;
+}
+
+.hamburger-menu span {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Updated Card Styles for Click Interaction */
+.card {
+  position: relative;
+  width: calc(100% - 200px);
+  height: 650px;
+  margin: 150px auto;
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer; /* Shows it's clickable */
+  transition: all 0.6s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+/* Hide Scrollbar but Keep Functionality */
+.card-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  /* Hide scrollbar for different browsers */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+.card-content::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+/* Updated History Timeline for Mobile */
+.cd-timeline-content {
+  background: #333C42;
+  border-radius: 10px;
+  padding: 20px;
+  margin-left: 40px;
+  position: relative;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+  #navbar{
+    position: fixed;
+  }
+  .navbar-container {
+    position: sticky;
+    padding: 0 15px;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+
+  .logo img {
+    height: 50px; /* Smaller logo on mobile */
+  }
+
+
+  .nav-items {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #12192795;
+    backdrop-filter: blur(10px);
+    flex-direction: column;
+    padding: 10px 0;
+    margin: 0;
+    z-index: 99;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-items.active {
+    display: flex;
+  }
+
+  .nav-items li {
+    margin: 0;
+    padding: 15px 20px;
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .nav-items li:last-child {
+    border-bottom: none;
+  }
+  .card {
+      width: calc(100% - 40px);
+      height: 500px;
+      margin: 100px auto;
+  }
+
+  /* Mobile History Timeline */
+  .cd-container {
+      width: calc(100% - 40px);
+      padding: 50px 20px;
+      margin: 100px auto;
+  }
+
+  .cd-timeline-content {
+      margin-left: 35px;
+  }
+
+  .cd-date {
+      font-size: 14px;
+      margin-top: 10px;
+      display: block;
+  }
+}
+
+.hamburger-menu.active span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 50%;
+}
+
+.hamburger-menu.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-menu.active span:nth-child(3) {
+  transform: rotate(-45deg);
+  bottom: 40%;
+}
+
+/* Position the three lines */
+.hamburger-menu span:nth-child(1) { top: 0; }
+.hamburger-menu span:nth-child(2) { top: 50%; transform: translateY(-50%); }
+.hamburger-menu span:nth-child(3) { bottom: 0; }

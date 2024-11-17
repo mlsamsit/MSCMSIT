@@ -129,3 +129,71 @@ document.querySelectorAll(".elem").forEach(function (elem) {
     });
   });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+  const hamburger = document.querySelector('.hamburger-menu');
+  const navItems = document.querySelector('.nav-items');
+  
+  hamburger.addEventListener('click', function() {
+      this.classList.toggle('active');
+      navItems.classList.toggle('active');
+  });
+
+  // Close menu when clicking outside
+  document.addEventListener('click', function(event) {
+      if (!hamburger.contains(event.target) && !navItems.contains(event.target)) {
+          hamburger.classList.remove('active');
+          navItems.classList.remove('active');
+      }
+  });
+
+  // Add click handler for cards
+  const cards = document.querySelectorAll('.card');
+  cards.forEach(card => {
+      card.addEventListener('click', function() {
+          this.classList.toggle('active');
+      });
+  });
+});
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const hamburger = document.querySelector('.hamburger-menu');
+  const navItems = document.querySelector('.nav-items');
+  
+  hamburger.addEventListener('click', function() {
+      navItems.classList.toggle('active');
+      hamburger.classList.toggle('active');
+  });
+});
+
+
+
+// Keep your existing GSAP and other code as is, just update/add this part:
+
+document.addEventListener('DOMContentLoaded', function() {
+  const hamburger = document.querySelector('.hamburger-menu');
+  const navItems = document.querySelector('.nav-items');
+  
+  // Toggle menu when hamburger is clicked
+  hamburger.addEventListener('click', function(e) {
+      e.stopPropagation(); // Prevent click from bubbling to document
+      this.classList.toggle('active');
+      navItems.classList.toggle('active');
+  });
+
+  // Close menu when clicking outside
+  document.addEventListener('click', function(event) {
+      const isClickInside = navItems.contains(event.target) || hamburger.contains(event.target);
+      
+      if (!isClickInside && navItems.classList.contains('active')) {
+          hamburger.classList.remove('active');
+          navItems.classList.remove('active');
+      }
+  });
+
+  // Prevent menu from closing when clicking inside nav items
+  navItems.addEventListener('click', function(e) {
+      e.stopPropagation();
+  });
+});
