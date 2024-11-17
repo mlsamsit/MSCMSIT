@@ -4,7 +4,7 @@ body {
     padding: 0;
     /* font-family: Menlo, courier-new, courier, monospace; */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #091b29;
+    background: #0A1019;
     
 
     /* background: linear-gradient(135deg, #0c1224, #10182f); */
@@ -20,8 +20,8 @@ body {
     position: fixed;
     z-index: 100;
     width: 100%;
-    background-color:#12192795;
-    border: 1px solid #24314b;
+    background-color:#0a101993;
+    border: 1px solid #0d203c;
     box-sizing: border-box;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     top: 0;
@@ -252,6 +252,8 @@ body {
 
   /* overflow-x: hidden; */
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  transition: all 0.6s cubic-bezier(0.33, 1, 0.68, 1);
+
 
 }
 .Historyy:hover{
@@ -554,7 +556,7 @@ body {
 
 
 html, body {
-  background-color: #222C32;
+  background-color: #121a26;
   height: 100%;
   font-family: 'Open Sans', sans-serif;
   box-sizing: border-box;
@@ -668,11 +670,11 @@ background: #b70000;
 position: relative;
 margin-left: 60px;
 margin-right: 30px;
-background: #333C42;
+background: #121a26;
 border-radius: 10px;
 padding: 1em;}
 .timeline-content-info {
-  background: #2B343A;
+  background: #121a26;
   padding: 5px 10px;
   color: rgba(255,255,255,0.7);
   font-size: 12px;
@@ -857,7 +859,7 @@ html, body {
 
 /* Updated History Timeline for Mobile */
 .cd-timeline-content {
-  background: #333C42;
+  background: #121a26;
   border-radius: 10px;
   padding: 20px;
   margin-left: 40px;
@@ -891,7 +893,7 @@ html, body {
     top: 100%;
     left: 0;
     width: 100%;
-    background-color: #12192795;
+    background-color: #121a26;
     backdrop-filter: blur(10px);
     flex-direction: column;
     padding: 10px 0;
