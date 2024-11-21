@@ -809,8 +809,8 @@ html, body {
   transform: translateY(-50%);
   z-index: 1000;
   cursor: pointer;
-  width: 30px; /* Fixed width */
-  height: 25px; /* Fixed height */
+  width: 30px;
+  height: 25px;
   padding: 0;
   background: transparent;
   border: none;
