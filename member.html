@@ -1,22 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OUR TEAM HERE !</title>
-    <link rel="icon" type="image/x-icon" href="/images/MSIT-depositphotos-bgremover.png">
-    <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MEET OUR TEAM</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/images/MSIT-depositphotos-bgremover.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="member.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+  </head>
+  <body>
     <header>
         <div class="logo">
             <img src="images/MSIT-depositphotos-bgremover.png" alt="">
-            <a href="index.html"class="header_logo">MSC</a>
+            <a href="index.html"class="header_logo"></a>
         </div>
         <div class="nav" id="nav_menu">
             <ion-icon name="close_outline" class="header_closer"></ion-icon>
-
+    
             <ul class="nav_list">
                 <li class="nav_item"><a href="index.html" class="nav_link">HOME</a></li>
                 <li class="nav_item"><a href="event.html" class="nav_link">EVENT</a></li>
@@ -25,39 +43,441 @@
                 <li class="nav_item"><a href="https://medium.com/@anushatomar02130" class="nav_link">BLOG</a></li>
                 <li class="nav_item"><a href="contact.html" class="nav_link">ABOUT US</a></li>
             </ul>
+            <div onclick="showSidebar()" class="sidebar-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="40">
+                    <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/>
+                </svg>
+            </div>
+             
+            <ul class="sidebar">
+                <li onclick="hideSidebar()"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></li>
+                <li><a href="index.html" class="nav_link">HOME</a></li>
+                <li><a href="event.html" class="nav_link">EVENT</a></li>
+                <li><a href="project.html" class="nav_link">PROJECTS</a></li>
+                <li><a href="member.html" class="nav_link">MEMBERS</a></li>
+                <li><a href="contact.html" class="nav_link">ABOUT US</a></li>
+                <li><a href="https://medium.com/@anushatomar02130" class="nav_link">BLOG</a></li>
+            </ul>
         </div>
-        <ion-icon name="menu_outline" class="header_toggle"></ion-icon>
     </header>
-    <div id="member">
-        <h1>LEADS</h1>
-        <div id="about">
-            <img src="/images/anusha.jpg" alt="">
-            <div id="textabout">
-                <h5>anusha tomar</h5>
-                <p>Beta- MLSA, Google Women Engineers Scholar, 
-                recipient of Harvard Scholarships. 
-                Prefers debugging over small talk and python over social pythons.</p>
-                <a href="https://www.linkedin.com/in/anushatomar/" target="_blank">Let's talk</a>
-            </div>
+
+    <div class="team">
+      <div class="center">
+        <h1>MEET OUR TEAM</h1>
+      </div>
+
+      <!-- lead -->
+      <div class="center">
+        <h3>LEADS</h3>
+      </div>
+      <div class="team-content">
+        <div class="box">
+          <img src="images/msc-core-members/shreyanshi-rathi.jpg" />
+          <h3>Shreyanshi Rathi</h3>
+          <h5>President</h5>
+          <div class="icons">
+            <a href="https://www.instagram.com/rathi.shreyaa/"
+              ><i class="ri-instagram-line"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/shreyanshi-rathi-1b413224b/"
+              ><i class="ri-linkedin-box-line"></i
+            ></a>
+          </div>
         </div>
-        <div id="about">
-            <img src="/images/ved.jpg" alt="">
-            <div id="textabout">
-                <h5> ved mohan </h5>
-                <p>Interning at 'Tech-A-Intern', 
-                    mastering MERN stack one line at a time. 
-                    While the React waves crash, Express sails, 
-                    and MongoDB roars, I'm here turning code into creations!"</p>
-                <a href="https://www.linkedin.com/in/ivedmohan/" target="_blank">Let's talk</a>
-            
-            </div>
-            
+
+        <div class="box">
+          <img src="images/msc-core-members/navneet-kumar-mishra.jpg" />
+          <h3>Navneet Kumar Mishra</h3>
+          <h5>General Secretary</h5>
+          <div class="icons">
+            <a href="https://www.instagram.com/9vneet_mishra/"
+              ><i class="ri-instagram-line"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/navneet-kumar-mishra-494a42251/"
+              ><i class="ri-linkedin-box-line"></i
+            ></a>
+          </div>
         </div>
-        
+
+        <div class="box">
+          <img src="images/msc-core-members/aditya-pandey.jpg" />
+          <h3>Aditya Pandey</h3>
+          <h5>General Secretary</h5>
+          <div class="icons">
+            <a href="https://www.instagram.com/aditya.pandey13/"
+              ><i class="ri-instagram-line"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/aditya-pandey-b6a340275/"
+              ><i class="ri-linkedin-box-line"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- advisor -->
+      <div class="center">
+        <h3>ADVISORS</h3>
+      </div>
+      <div class="team-content" id="advisors">
+        <div class="box">
+          <img src="images/msc-core-members/anusha-tomar.jpg" />
+          <h3>Anusha Tomar</h3>
+          <h5>Advisor</h5>
+          <div class="icons">
+            <a href="https://www.instagram.com/anushaaaaa21/"
+              ><i class="ri-instagram-line"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/anushatomar/"
+              ><i class="ri-linkedin-box-line"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images/msc-core-members/ved-mohan.jpg" />
+          <h3>Ved Mohan</h3>
+          <h5>Advisor</h5>
+          <div class="icons">
+            <a href="https://www.instagram.com/ivedmohan/"
+              ><i class="ri-instagram-line"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/ivedmohan/"
+              ><i class="ri-linkedin-box-line"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- executive heads -->
+
+      <div class="center">
+        <h3>EXECUTIVE HEADS</h3>
+      </div>
+      <div class="team-content" id="exec-head">
+        <div class="box">
+          <img src="images/msc-core-members/naveen-kumar-sharma.jpg" />
+          <h3>Naveen Kumar Sharma</h3>
+          <h5>Treasurer</h5>
+          <div class="icons">
+            <a href="#"><i class="ri-instagram-line"></i></a>
+            <a href="https://www.linkedin.com/in/naveen-kumar-sharma-40346b256/"
+              ><i class="ri-linkedin-box-line"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images/msc-core-members/dhanur-chahal.jpg" />
+          <h3>Dhanur Chahal</h3>
+          <h5>Event Management</h5>
+          <div class="icons">
+            <a href="#"><i class="ri-instagram-line"></i></a>
+            <a href="https://www.linkedin.com/in/dhanur-chahal-6a8ba01a3/"
+              ><i class="ri-linkedin-box-line"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images/msc-core-members/kumar-abhijitam-dubey.jpg" />
+          <h3>Kumar Abhijitam Dubey</h3>
+          <h5>Web Development</h5>
+          <div class="icons">
+            <a href="#"><i class="ri-instagram-line"></i></a>
+            <a href="https://www.linkedin.com/in/abhijitam-dubey-3ab794263"
+              ><i class="ri-linkedin-box-line"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images/msc-core-members/mankrish-lutharia.jpg" />
+          <h3>Mankrish Lutharia</h3>
+          <h5>Social Media</h5>
+          <div class="icons">
+            <a href="https://www.instagram.com/mankrishlutharia133/"
+              ><i class="ri-instagram-line"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/mankrish-lutharia-232058282/"
+              ><i class="ri-linkedin-box-line"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images/msc-core-members/jiya-mehta.png" />
+          <h3>Jiya Mehta</h3>
+          <h5>Design</h5>
+          <div class="icons">
+            <a href="https://www.instagram.com/_jiyaaa_104"
+              ><i class="ri-instagram-line"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/jiya-mehta-581877257/"
+              ><i class="ri-linkedin-box-line"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images/msc-core-members/alisha-karma.PNG" />
+          <h3>Alisha Karma</h3>
+          <h5>Content</h5>
+          <div class="icons">
+            <a href="https://www.instagram.com/alishaaakarma31"
+              ><i class="ri-instagram-line"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/alisha-karma-4b94b1298/"
+              ><i class="ri-linkedin-box-line"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images/msc-core-members/rohit-kumar.jpg" />
+          <h3>Rohit Kumar</h3>
+          <h5>DSA</h5>
+          <div class="icons">
+            <a href="https://www.instagram.com/rohitk0056/"
+              ><i class="ri-instagram-line"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/rohit-kumar-764518292/"
+              ><i class="ri-linkedin-box-line"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images/msc-core-members/shyamal.png" />
+          <h3>Shyamal Malhotra</h3>
+          <h5>AI/ML</h5>
+          <div class="icons">
+            <a href="https://www.instagram.com/shyamal_malhotra/"
+              ><i class="ri-instagram-line"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/shyamal-malhotra-b73154222/"
+              ><i class="ri-linkedin-box-line"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images/msc-core-members/priyanshu-raj.png" />
+          <h3>Priyanshu Raj</h3>
+          <h5>Public Relations</h5>
+          <div class="icons">
+            <a href="#"><i class="ri-instagram-line"></i></a>
+            <a href="https://www.linkedin.com/in/priyanshu-raj-6b2664273/"
+              ><i class="ri-linkedin-box-line"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- deputy heads -->
+
+      <div class="center">
+        <h3>DEPUTY HEADS</h3>
+      </div>
+      <div class="team-content" id="exec-head">
+        <div class="box">
+          <img src="images/msc-core-members/rishabh-khokher.jpg" />
+          <h3>Rishabh Khokher</h3>
+          <h5>Event Management</h5>
+          <div class="icons">
+            <a href="https://www.instagram.com/rishabh_140704/"
+              ><i class="ri-instagram-line"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/rishabh-khokher-57b73b250/"
+              ><i class="ri-linkedin-box-line"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images/msc-core-members/aaryan-mishra.jpg" />
+          <h3>Aaryan Mishra</h3>
+          <h5>Public Relations</h5>
+          <div class="icons">
+            <a href="https://www.instagram.com/aaryan.mishra.963/"
+              ><i class="ri-instagram-line"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/aaryan-mishra-3b56a7259/"
+              ><i class="ri-linkedin-box-line"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images/msc-core-members/ravikant-tiwari.jpg" />
+          <h3>Ravikant Tiwari</h3>
+          <h5>Web Development</h5>
+          <div class="icons">
+            <a href="#"><i class="ri-instagram-line"></i></a>
+            <a href="https://www.linkedin.com/in/ravikant-tiwari-261079201/"
+              ><i class="ri-linkedin-box-line"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images/msc-core-members/dishaa-singh.jpg" />
+          <h3>Dishaa Singh</h3>
+          <h5>Web Development</h5>
+          <div class="icons">
+            <a href="https://www.instagram.com/purplelillies_/"
+              ><i class="ri-instagram-line"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/dishaa-singh/"
+              ><i class="ri-linkedin-box-line"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images/msc-core-members/sarthak-kakar.JPG" />
+          <h3>Sarthak Kakar</h3>
+          <h5>Event Management</h5>
+          <div class="icons">
+            <a href="https://www.instagram.com/sarthak_kakar19/"
+              ><i class="ri-instagram-line"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/sarthak-kakar-085004292/"
+              ><i class="ri-linkedin-box-line"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images/msc-core-members/dhruv-rankoti.jpg" />
+          <h3>Dhruv Rankoti</h3>
+          <h5>DSA</h5>
+          <div class="icons">
+            <a href="https://www.instagram.com/dhruvrankoti_iam/"
+              ><i class="ri-instagram-line"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/dhruv-rankoti-a33233291/"
+              ><i class="ri-linkedin-box-line"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images/msc-core-members/lakshya-sachdeva.jpg" />
+          <h3>Lakshya Sachdeva</h3>
+          <h5>AI/ML</h5>
+          <div class="icons">
+            <a href="https://www.instagram.com/lakshya.sachdeva.24/"
+              ><i class="ri-instagram-line"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/lakshya-sachdeva-392b2829b/"
+              ><i class="ri-linkedin-box-line"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images/msc-core-members/pakhi-vashishtha.png" />
+          <h3>Pakhi Vashsishtha</h3>
+          <h5>Social Media</h5>
+          <div class="icons">
+            <a href="#"><i class="ri-instagram-line"></i></a>
+            <a href="#"><i class="ri-linkedin-box-line"></i></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images/msc-core-members/harshita-verma.jpg" />
+          <h3>Harshita Verma</h3>
+          <h5>Content</h5>
+          <div class="icons">
+            <a href="https://www.instagram.com/vharshita15/"
+              ><i class="ri-instagram-line"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/harshita-verma-453954292/"
+              ><i class="ri-linkedin-box-line"></i
+            ></a>
+          </div>
+        </div>
+      </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <div id="footer">
+      <img src="./images/dots-footer.png" alt="" />
+      <div id="f1">
+        <img src="/images/MSIT-depositphotos-bgremover.png" alt="" />
+      </div>
+      <div id="f2">
+        <ul class="wrapper">
+          <li class="icon instagram">
+            <span class="tooltip">Instagram</span>
+            <a
+              href="https://www.instagram.com/mscmsit/"
+              target="_blank"
+              rel="no-referrer"
+            >
+              <span><i class="fab fa-instagram"></i></span>
+            </a>
+          </li>
+          <li class="icon github">
+            <span class="tooltip">Github</span>
+            <a
+              href="https://github.com/mlsamsit"
+              target="_blank"
+              rel="no-referrer"
+            >
+              <span><i class="fab fa-github"></i></span>
+            </a>
+          </li>
+          <li class="icon linkedin">
+            <span class="tooltip">LinkedIn</span>
+            <a
+              href="https://www.linkedin.com/company/mscmsit/"
+              target="_blank"
+              rel="no-referrer"
+            >
+              <span><i class="fab fa-linkedin"></i></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div id="f3">
+        <a href="project.html" target="_blank" rel="no-referrer"
+          ><h3>projects</h3></a
+        >
+        <a href="event.html" target="_blank" rel="no-referrer"
+          ><h3>events</h3></a
+        >
+        <a href="member.html" target="_blank" rel="no-referrer"
+          ><h3>members</h3></a
+        >
+      </div>
+      <div id="f4">
+        <h4>
+          MAHARAJA SURAJMAL INSTITUTE OF TECHNOLOGY<br />
+          C4 JANAKPURI, NEW DELHI<br />
+          110058
+        </h4>
+        <h6>
+          Created and Maintained by MSC Leads<br />
+          © 2023 MSC MSIT, made with love ❤️
+        </h6>
+      </div>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+      integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
