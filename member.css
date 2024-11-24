@@ -2,7 +2,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-<<<<<<< HEAD
   }
   
   html,
@@ -27,36 +26,14 @@
     margin-left: auto;
     margin-right: auto;
     min-height: 100vh;
-=======
-}
-
-html, body {
-    height: 100%;
-    margin: 0;  
-    margin-bottom: 30px;
-}
-
-.team {
-    position: relative;
-    padding-top: 50px;
-    width: 100%;
-    min-height: 100vh;  
-    background: radial-gradient(#02467a, #030142);
->>>>>>> d2177cde3fdeb4ea68595611a5f0b5fd665f3158
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     padding-bottom: 100px;
-<<<<<<< HEAD
   }
   
   .team-content {
-=======
-}
-
-.team-content {
->>>>>>> d2177cde3fdeb4ea68595611a5f0b5fd665f3158
     width: 100%;
     max-width: 1350px;
     margin: 0 auto;
@@ -66,7 +43,6 @@ html, body {
     gap: 2rem;
     text-align: center;
     margin-top: 2.5rem;
-<<<<<<< HEAD
   }
   
   #advisors {
@@ -107,68 +83,18 @@ html, body {
   }
   
   .box h3 {
-=======
-}
-
-#deputy-head {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-}
-
-@media (max-width: 1240px) {
-    .team-content {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    }
-}
-
-.team-content img {
-    width: 100%;
-    height: auto;
-    border-radius: 15px;
-    margin-bottom: 15px;
-}
-
-.center h1 {
-    color: #fff;
-    font-size: 4rem;
-    text-align: center;
-}
-
-.center h3 {
-    color: #fff;
-    margin-bottom: 1px;
-    margin-top: 30px;
-    font-size: 2rem;
-    text-align: center;
-}
-
-.box {
-    padding: 16px;
-    background: #1b1229;
-    border-radius: 15px;
-    transition: all .38s ease;
-}
-
-.box h3 {
->>>>>>> d2177cde3fdeb4ea68595611a5f0b5fd665f3158
     font-size: 23px;
     font-weight: 600;
     color: #fff;
     margin-bottom: 8px;
-<<<<<<< HEAD
   }
   
   .box h5 {
-=======
-}
-
-.box h5 {
->>>>>>> d2177cde3fdeb4ea68595611a5f0b5fd665f3158
     font-size: 15px;
     font-weight: 600;
     color: #b7b4bb;
     margin-bottom: 15px;
     letter-spacing: 2px;
-<<<<<<< HEAD
   }
   
   .icons i {
@@ -228,32 +154,3 @@ html, body {
       gap: 20px;
     }
   }
-=======
-}
-
-.icons i {
-    display: inline-block;
-    color: #fff;
-    font-size: 20px;
-    margin: 0 8px;
-    transition: all .38s ease;
-}
-
-.icons i:hover {
-    transform: scale(1.2);
-}
-
-.box:hover {
-    transform: translateY(-10px);
-    cursor: pointer;
-}
-
-@media (max-width: 1240px) {
-    .team {
-        padding: 90px 2%;
-    }
-    .center h1 {
-        font-size: 3.2rem;  
-    }
-}
->>>>>>> d2177cde3fdeb4ea68595611a5f0b5fd665f3158
