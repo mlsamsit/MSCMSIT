@@ -22,8 +22,29 @@ smooth: true,
 });
 
 function showSidebar() {
+<<<<<<< HEAD
 const sidebar = document.querySelector(".sidebar");
 const sidebarIcon = document.querySelector(".sidebar-icon");
+=======
+  const sidebar = document.querySelector(".sidebar");
+  const sidebarIcon = document.querySelector(".sidebar-icon");
+
+  sidebar.style.display = "flex";  // Show sidebar
+  sidebarIcon.style.display = "none";  // Hide hamburger icon
+}
+
+function hideSidebar() {
+  const sidebar = document.querySelector(".sidebar");
+  const sidebarIcon = document.querySelector(".sidebar-icon");
+
+  sidebar.style.display = "none";  // Hide sidebar
+  sidebarIcon.style.display = "flex";  // Show hamburger icon
+}
+
+
+function firstPageAnim() {
+  var tl = gsap.timeline();
+>>>>>>> d2177cde3fdeb4ea68595611a5f0b5fd665f3158
 
 sidebar.style.display = "flex";  // Show sidebar
 sidebarIcon.style.display = "none";  // Hide hamburger icon
