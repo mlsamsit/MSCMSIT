@@ -1,135 +1,330 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ABOUT US</title>
-    <link rel="icon" type="image/x-icon" href="/images/MSIT-depositphotos-bgremover.png">
-    <link rel="stylesheet" href="about_style.css">
-    <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
-  </head>
-  <body>
-    <div class="flex-container">
-      <header>
-        <div class="logo">
-            <img src="images/MSIT-depositphotos-bgremover.png" alt="">
-            <a href="index.html"class="header_logo"></a>
-        </div>
-        <div class="nav" id="nav_menu">
-            <ion-icon name="close_outline" class="header_closer"></ion-icon>
 
-            <ul class="nav_list">
-                <li class="nav_item"><a href="index.html" class="nav_link">HOME</a></li>
-                <li class="nav_item"><a href="event.html" class="nav_link">EVENT</a></li>
-                <li class="nav_item"><a href="project.html" class="nav_link">PROJECTS</a></li>
-                <li class="nav_item"><a href="member.html" class="nav_link">MEMBERS</a></li>
-                <li class="nav_item"><a href="blogs.html" class="nav_link">BLOG</a></li>
-                <li class="nav_item"><a href="contact.html" class="nav_link">ABOUT US</a></li>
-            </ul>
-            <div onclick="showSidebar()" class="sidebar-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="40">
-                    <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/>
-                </svg>
-            </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <link rel="stylesheet" href="aboutus.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="nav-style.css">
+  <link rel="icon" type="image/x-icon" href="/images/MSIT-depositphotos-bgremover.png">
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <!-- <link rel="stylesheet" href="mywork.css"> -->
+</head>
 
-            <ul class="sidebar">
-                <li onclick="hideSidebar()"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></li>
-                <li><a href="index.html" class="nav_link">HOME</a></li>
-                <li><a href="event.html" class="nav_link">EVENT</a></li>
-                <li><a href="project.html" class="nav_link">PROJECTS</a></li>
-                <li><a href="member.html" class="nav_link">MEMBERS</a></li>
-                <li><a href="contact.html" class="nav_link">ABOUT US</a></li>
-                <li><a href="https://medium.com/@anushatomar02130" class="nav_link">BLOG</a></li>
-            </ul>
-        </div>
-    </header>
-    <div id="main">
-        <div id="page">
-            <div class="container">
-                <div class="card">
-                  <div class="face face1">
-                    <div class="content">
-                      <h3 class="heading">Goals</h3>
-                    </div>
-                  </div>
-                  <div class="face face2">
-                    <div class="content">
-                      <p>
-                        From diving into the world of AI and creating websites from scratch to exploring the secrets of cybersecurity – Our events cover it all. But wait, there's more! We want to hear YOUR ideas too. Yup, you read that right! You suggest the topic, and we'll whip up an event for you. It's that easy.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="face face1">
-                    <div class="content">
-                      <h3 class="heading">Support</h3>
-                    </div>
-                  </div>
-                  <div class="face face2">
-                    <div class="content">
-                      <p>
-                        We're not in this journey alone – we've got the support of the Microsoft Learn Student Ambassadors team, a group of passionate tech champions ready to empower and guide us. And that's not all! The Microsoft Azure community has our back, ensuring that our events remain top-notch and just the best!
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="face face1">
-                    <div class="content">
-                      <h3 class="heading">Perks</h3>
-                    </div>
-                  </div>
-                  <div class="face face2">
-                    <div class="content">
-                      <p>
-                        But wait, there's more! We're adding some serious swags to the mix! Being part of the MSC MSIT means you'll have the chance to score fantastic Microsoft goodies that are not only cool but also a statement of your tech passion
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-        </div>
+<body id="main">
+  <header>
+    <div class="logo">
+        <img src="images/MSIT-depositphotos-bgremover.png" alt="">
+        <a href="index.html"class="header_logo"></a>
     </div>
-    <div id="footer">
-      <img
-    src="./images/dots-footer.png" alt=""/>
-  <div id="f1">
-    <img
-      src="/images/MSIT-depositphotos-bgremover.png" alt=""/>
+    <div class="nav" id="nav_menu">
+        <ion-icon name="close_outline" class="header_closer"></ion-icon>
+
+        <ul class="nav_list">
+            <li class="nav_item"><a href="index.html" class="nav_link">HOME</a></li>
+            <li class="nav_item"><a href="event.html" class="nav_link">EVENT</a></li>
+            <li class="nav_item"><a href="project.html" class="nav_link">PROJECTS</a></li>
+            <li class="nav_item"><a href="member.html" class="nav_link">MEMBERS</a></li>
+            <li class="nav_item"><a href="https://medium.com/@anushatomar02130" class="nav_link">BLOG</a></li>
+            <li class="nav_item"><a href="contact.html" class="nav_link">ABOUT US</a></li>
+        </ul>
+        <div onclick="showSidebar()" class="sidebar-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="40">
+                <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/>
+            </svg>
+        </div>
+         
+        <ul class="sidebar">
+            <li onclick="hideSidebar()"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></li>
+            <li><a href="index.html" class="nav_link">HOME</a></li>
+            <li><a href="event.html" class="nav_link">EVENT</a></li>
+            <li><a href="project.html" class="nav_link">PROJECTS</a></li>
+            <li><a href="member.html" class="nav_link">MEMBERS</a></li>
+            <li><a href="contact.html" class="nav_link">ABOUT US</a></li>
+            <li><a href="https://medium.com/@anushatomar02130" class="nav_link">BLOG</a></li>
+        </ul>
+    </div>
+</header>
+  </div>
+  </nav>
+
+  <div class="container">
+    <!-- Introduction Section -->
+    <div class="work">
+      
+      </a>
+    </div>
+    <div class="card" id="intro">
+      <div class="card-overlay"></div>
+      <div class="card-content">
+        <h2 class="card-title">Introduction</h2>
+        <p class="card-description">
+          <br><br><br>
+          <b>Microsoft Student Chapter</b> MSIT is a vibrant student community at Maharaja Surajmal Institute
+          of Technology, dedicated
+          to fostering technical excellence and professional development. With a strong focus on innovation
+          and leadership, the community provides students with the tools and opportunities to explore their
+          potential and excel in the ever-evolving world of technology.
+          <br><br>
+          Our mission is to bridge the gap between academic learning and real-world applications. Through a
+          variety of initiatives such as workshops, seminars, hackathons, coding competitions, and
+          collaborative projects, we empower students to acquire in-demand skills and stay updated with the
+          latest industry trends.
+          <br><br>
+          MSC MSIT thrives on the principles of creativity, teamwork, and continuous learning. We strive to
+          create a supportive and inclusive environment where students can connect, collaborate, and grow. By
+          nurturing their aspirations and providing the right guidance, we aim to shape future leaders and
+          innovators ready to make a meaningful impact on society.
+        </p>
+      </div>
+    </div>
+
+    <!-- Goals Section -->
+    <div class="card" id="goals">
+      <div class="card-overlay"></div>
+      <div class="card-content text-right">
+        <h2 class="card-title card-title-right">Goals</h2>
+        <p class="card-description">
+          <br><br><br>
+          Our primary goal at <b>MSC MSIT</b> is to empower students with industry-relevant skills that bridge
+          the gap between classroom learning and professional demands. We aim to equip students with the
+          technical expertise and practical knowledge needed to excel in today’s competitive landscape.
+          <br><br>
+          To achieve this, we organize engaging technical workshops, hackathons, and seminars designed to
+          enhance learning and spark innovation. These initiatives provide hands-on experience and encourage
+          students to think critically and creatively about solving real-world challenges.
+          <br><br>
+          We also focus on creating valuable networking opportunities by connecting students with industry
+          professionals, mentors, and peers. By building a strong, collaborative community, we strive to
+          nurture the next generation of tech leaders who are ready to make a meaningful impact in their
+          fields.
+        </p>
+      </div>
+    </div>
+
+    <!-- Mission and Vision Section -->
+    <div class="card" id="mission">
+      <div class="card-overlay"></div>
+      <div class="card-content">
+        <h2 class="card-title">Mission and Vision</h2>
+        <p class="card-description">
+          <br><br><br>
+          <b style="font-size: 1.5rem;">Mission</b><br><br>
+          Our mission is to bridge the gap between academic learning and industry requirements. We aim to
+          equip students with practical skills, knowledge, and experience that align with the evolving demands
+          of the tech industry. Through targeted initiatives and real-world exposure, we strive to ensure that
+          students are well-prepared to thrive in their professional careers.
+          <br><br><br>
+          <b style="font-size: 1.5rem;">Vision</b><br><br>
+          We envision creating a community of skilled professionals who are not only proficient in their
+          technical fields but also contribute meaningfully to the growth and advancement of the tech
+          industry. By fostering innovation, collaboration, and continuous learning, we aspire to shape the
+          next generation of tech leaders who will make a lasting impact on the world.
+        </p>
+      </div>
+    </div>
+
+    <!-- Perks Section -->
+    <div class="card" style="height: 740px;" id="perks">
+      <div class="card-overlay"></div>
+      <div class="card-content text-right">
+        <h2 class="card-title">Perks of Joining</h2>
+        <p class="card-description"><br><br><br>
+
+          As a member of <b>MSC MSIT</b>, you gain exclusive access to a wide range of opportunities designed to
+          propel your career and personal growth. Our <b>workshops</b> are led by industry experts who cover the
+          latest technological advancements and in-demand skills. These workshops provide hands-on learning
+          experiences, allowing you to develop a deeper understanding of emerging fields like AI, IoT, and web
+          development, among others.
+          <br><br>
+          We also offer <b>mentorship programs</b>, connecting you with seasoned professionals who guide you in
+          navigating both academic and career challenges. Whether you need advice on technical concepts,
+          career pathways, or personal development, our mentors are here to help you reach your potential and
+          accelerate your growth.
+          <br><br>
+          As a member, you will benefit from valuable <b>industry connections</b> that open doors to internships,
+          job opportunities, and collaborations. Networking with like-minded peers and professionals enhances
+          your chances of building a successful career in tech.
+          <br><br>
+          We also provide <b>courses</b> , which allow you to acquire credentials that demonstrate
+          your expertise in key areas. These certifications make you more competitive in the job market and
+          equip you with the skills employers are looking for.
+          <br><br>
+          Lastly, our <b>hands-on projects</b> give you real-world experience, helping you apply your knowledge
+          and stand out to future employers. Join <b>MSC MSIT</b> today and take the first step toward
+          accelerating your career in the tech industry!
+        </p>
+      </div>
+    </div>
+
+
+    <!-- Support Section -->
+    <!-- <div class="card" id="support">
+            <img src="images/11.webp" alt="Support" class="card-image">
+            <div class="card-overlay"></div>
+            <div class="card-content text-right">
+                <h2 class="card-title">Support</h2>
+                <p class="card-description">
+                    Our dedicated team provides continuous support through mentorship, resource sharing, 
+                    and career guidance. We're here to help you navigate your technical journey successfully.
+                </p>
+                <p class="hover-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod 
+                    tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+            </div>
+        </div> -->
   </div>
 
-  <div id="f2">
-      <ul class="wrapper">
-          <li class="icon instagram">
-            <span class="tooltip">Instagram</span>
-            <a href="https://www.instagram.com/mscmsit/" target="_blank" rel="no-referrer"><span><i class="fab fa-instagram"></i></span></a>
-          </li>
-          <li class="icon github">
-            <span class="tooltip">Github</span>
-            <a href="https://github.com/mlsamsit" target="_blank" rel="no-referrer"><span><i class="fab fa-github"></i></span></a>
-          </li>
-          <li class="icon linkedin">
-            <span class="tooltip">linkedin</span>
-            <a href="https://www.linkedin.com/company/mscmsit/" target="_blank" rel="no-referrer"><span><i class="fab fa-linkedin"></i></span></a>
-          </li>
-        </ul>
+  <div class="working">
+    <a href="#">
+      <h1>History of MSC</h1>
+    </a>
   </div>
-  <div id="f3">
-    <a href="project.html" target="_blank" rel="no-referrer"><h3>projects</h3></a>
-    <a href="event.html" target="_blank" rel="no-referrer"><h3>events</h3></a>
-    <a href="member.html" target="_blank" rel="no-referrer"><h3>members</h3></a>
+  <div class="Historyy">
+    <section id="cd-timeline" class="cd-container">
+      <div class="cd-timeline-block">
+        <div class="cd-timeline-img cd-picture">
+        </div> <!-- cd-timeline-img -->
+
+        <div class="cd-timeline-content">
+          <h2>The Inception of Microsoft Student Chapter</h2>
+          <p>Microsoft initiated the concept of student chapters to engage with the upcoming generation of
+            technologists. The focus was to create a platform for students to access learning resources, certifications,
+            and guidance while fostering a collaborative community for skill enhancement using Microsoft technologies.
+          </p>
+          <span class="cd-date">Early 2000s</span>
+        </div> <!-- cd-timeline-content -->
+      </div>
+
+      <div class="cd-timeline-block">
+        <div class="cd-timeline-img cd-movie">
+        </div> <!-- cd-timeline-img -->
+
+        <div class="cd-timeline-content">
+          <h2>Expansion and University Partnerships</h2>
+          <p>The MSC program started forming official partnerships with universities globally. These student-led
+            chapters began organizing hands-on workshops, technical sessions, and events like hackathons to build
+            familiarity with tools like Visual Studio, .NET Framework, and SQL Server. These chapters</p>
+          <span class="cd-date">Mid-2000s</span>
+        </div> <!-- cd-timeline-content -->
+      </div> <!-- cd-timeline-block -->
+
+      <div class="cd-timeline-block">
+        <div class="cd-timeline-img cd-picture">
+        </div> <!-- cd-timeline-img -->
+
+        <div class="cd-timeline-content">
+          <h2>Growth in Student-Led Initiatives</h2>
+          <p>MSC became a hub for students interested in building leadership and technical skills. The chapters
+            emphasized student-driven innovation, providing resources to develop real-world projects. Events like
+            Imagine Cup and coding challenges gained traction, allowing students to showcase their technical abilities
+            on global platforms.</p>
+          <span class="cd-date">Late 2000s – Early 2010s</span>
+        </div> <!-- cd-timeline-content -->
+      </div> <!-- cd-timeline-block -->
+
+      <div class="cd-timeline-block">
+        <div class="cd-timeline-img cd-location">
+        </div> <!-- cd-timeline-img -->
+
+        <div class="cd-timeline-content">
+          <h2> Integration with Microsoft Learn and Focus on Cloud Technologies</h2>
+          <p>With the rise of cloud computing and AI, Microsoft aligned MSC with Microsoft Learn, a platform offering
+            free, structured learning paths. The chapters began incorporating training on cutting-edge technologies like
+            Azure, AI, Power BI, and cybersecurity. This integration provided MSC members access to tools needed to stay
+            updated with industry trends.</p>
+          <span class="cd-date">2010s</span>
+        </div> <!-- cd-timeline-content -->
+      </div> <!-- cd-timeline-block -->
+
+      <div class="cd-timeline-block">
+        <div class="cd-timeline-img cd-location">
+        </div>
+
+        <div class="cd-timeline-content">
+          <h2>Launch of Microsoft Learn Student Ambassadors Program</h2>
+          <p>Microsoft introduced the Student Ambassadors Program to work alongside MSC. This program empowered selected
+            students to represent Microsoft on their campuses, lead technical events, and mentor peers. The ambassadors
+            were often chosen from active MSC members, further strengthening the link between students and the tech
+            ecosystem.</p>
+          <span class="cd-date">2015</span>
+        </div> <!-- cd-timeline-content -->
+      </div> <!-- cd-timeline-block -->
+
+      <div class="cd-timeline-block">
+        <div class="cd-timeline-img cd-movie">
+        </div> <!-- cd-timeline-img -->
+
+        <div class="cd-timeline-content">
+          <h2> A Thriving Global Network</h2>
+          <p>The Microsoft Student Chapter now functions as a global community, empowering students to excel in the tech
+            industry. It focuses on skill-building, networking, and providing mentorship and internships. MSC members
+            actively engage in international competitions, webinars, and certification programs, making the chapters a
+            key enabler for bridging the gap between academia and industry.</p>
+          <span class="cd-date">2020s</span>
+        </div> <!-- cd-timeline-content -->
+      </div> <!-- cd-timeline-block -->
+    </section> <!-- cd-timeline -->
   </div>
-  <div id="f4">
-    <h4>
-      MAHARAJA SURAJMAL INSTITUTE OF TECHNOLGY<br />
-                  C4 JANAKPURI, NEW DELHI <br />
-                  110058 <br />
-    </h4>
-    <h6>Created and Maintained by MSC Leads <br>
-      © 2023 MSC MSIT, made with love ❤️<h6>
-  </div>
-  <script src="script.js"></script>
-  </body>
+</body>
+
+</html>
+
+
+
+<div id="footer">
+  <img
+src="./images/dots-footer.png" alt=""/>
+<div id="f1">
+<img
+  src="/images/MSIT-depositphotos-bgremover.png" alt=""/>
+</div>
+
+<div id="f2">
+  <ul class="wrapper">
+      <li class="icon instagram">
+        <span class="tooltip">Instagram</span>
+        <a href="https://www.instagram.com/mscmsit/" target="_blank" rel="no-referrer"><span><i class="fab fa-instagram"></i></span></a>
+      </li>
+      <li class="icon github">
+        <span class="tooltip">Github</span>
+        <a href="https://github.com/mlsamsit" target="_blank" rel="no-referrer"><span><i class="fab fa-github"></i></span></a>
+      </li>
+      <li class="icon linkedin">
+        <span class="tooltip">linkedin</span>
+        <a href="https://www.linkedin.com/company/mscmsit/" target="_blank" rel="no-referrer"><span><i class="fab fa-linkedin"></i></span></a>
+      </li>
+    </ul>
+</div>
+<div id="f3">
+<a href="project.html" target="_blank" rel="no-referrer"><h3>projects</h3></a>
+<a href="event.html" target="_blank" rel="no-referrer"><h3>events</h3></a>
+<a href="member.html" target="_blank" rel="no-referrer"><h3>members</h3></a>
+</div>
+<div id="f4">
+<h4>
+  MAHARAJA SURAJMAL INSTITUTE OF TECHNOLGY<br />
+            C4 JANAKPURI, NEW DELHI <br />
+            110058 <br />
+</h4>
+<h6>Created and Maintained by MSC Leads <br>
+  © 2023 MSC MSIT, made with love ❤️<h6>
+</div>
+
+
+
+</footer>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/locomotive-scroll/4.1.4/locomotive-scroll.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/locomotive-scroll/4.1.4/locomotive-scroll.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+<script src="aboutus.js"></script>
+<script src="script.js"></script>
+</body>
+
 </html>
