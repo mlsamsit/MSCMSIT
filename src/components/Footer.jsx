@@ -176,7 +176,7 @@ const Footer = () => {
             <div className="flex items-center space-x-2 text-sm">
               <span>Created and Maintained by</span>
               <span className="font-semibold px-3 py-1 bg-white/20 rounded-full backdrop-blur-sm">
-                MSC Leads
+                MSC WEB DEV TEAM
               </span>
             </div>
             <div className="flex items-center space-x-2 text-sm">

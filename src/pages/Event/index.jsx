@@ -2,23 +2,11 @@ import React, { useState } from 'react';
 import { Calendar, Clock, MapPin, Users, ChevronRight } from 'lucide-react';
 
 const EventsPage = () => {
-  const [showUpcoming, setShowUpcoming] = useState(true);
+  const [showUpcoming, setShowUpcoming] = useState(false);
 
   const upcomingEvents = [
     {
       id: '1',
-      title: 'Hands-on Session: Git & GitHub',
-      date: '2024-08-22',
-      time: '10:00 AM - 12:00 PM',
-      location: 'Yet to release',
-      description: 'Equip students, especially freshers, with essential Git & GitHub skills early in the semester.',
-      category: 'Workshop',
-      attendees: 80,
-      image: './git-github.jpg',
-      tags: ['Git', 'GitHub', 'Version Control']
-    },
-    {
-      id: '2',
       title: 'Final Push: Career Session',
       date: '2024-08-28',
       time: '10:00 AM - 12:00 PM',
@@ -30,7 +18,7 @@ const EventsPage = () => {
       tags: ['Career', 'Resume', 'LinkedIn']
     },
     {
-      id: '3',
+      id: '2',
       title: 'The Ideathon',
       date: '2024-10-03',
       time: 'All Day',
@@ -42,7 +30,7 @@ const EventsPage = () => {
       tags: ['Ideathon', 'Innovation', 'Teamwork']
     },
     {
-      id: '4',
+      id: '3',
       title: 'Office Visit / Speaker Panel',
       date: '2024-10-17',
       time: 'Full Day (Oct 17–18)',
@@ -70,6 +58,18 @@ const EventsPage = () => {
       './group.jpg',
     tags: ['Freshers', 'Interaction', '2025 Batch']
   },
+  {
+      id: 'past4',
+      title: 'Hands-on Session: Git & GitHub',
+      date: '2024-08-22',
+      time: '10:00 AM - 12:00 PM',
+      location: 'Yet to release',
+      description: 'Equip students, especially freshers, with essential Git & GitHub skills early in the semester.',
+      category: 'Workshop',
+      attendees: 80,
+      image: './git-github.jpg',
+      tags: ['Git', 'GitHub', 'Version Control']
+    },
   {
     id: 'past5',
     title: 'LeetWars - The Ultimate DSA Challenge',
