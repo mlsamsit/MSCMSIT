@@ -160,7 +160,7 @@ export const membersData = {
       photo: "./members/ayush-singh.jpeg",
       about: "Experienced content creator and social media manager for sports teams.",
       linkedin: "https://www.linkedin.com/in/ayushas7",
-      instagram: "https://www.instagram.com/ayush.singh",
+      instagram: "https://www.instagram.com/ayush.singh____/#",
     },
     {
       id: 16,
