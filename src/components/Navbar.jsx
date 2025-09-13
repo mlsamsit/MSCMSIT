@@ -11,7 +11,7 @@ const Navbar = () => {
   // Menu items with routes
   const menuItems = [
     { name: 'Home', path: '/', hasDropdown: false, scrollTo: 'hero' },
-    { name: 'Join MSC', path: '/joinmsc', hasDropdown: false },
+    // { name: 'Join MSC', path: '/joinmsc', hasDropdown: false },
     { name: 'About Us', path: '/', hasDropdown: false, scrollTo: 'about' }, // Special case for scrolling
     { name: 'Events', path: '/events', hasDropdown: false, scrollTo: null },
     { name: 'Blogs', path: 'https://dev.to/mscmsit', hasDropdown: false, scrollTo: null },

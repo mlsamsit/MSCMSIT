@@ -35,10 +35,10 @@ const router = createBrowserRouter([
         path: "/members",
         element: <Members/>
       },
-      {
-        path:"/joinmsc",
-        element:<JoinMSC/>
-      }
+      // {
+      //   path:"/joinmsc",
+      //   element:<JoinMSC/>
+      // }
     ]
   }
 ])

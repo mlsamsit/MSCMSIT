@@ -250,6 +250,16 @@ export const membersData = {
       linkedin: "https://www.linkedin.com/in/yashaswininarula",
       instagram: "",
     },
+    {
+      id: 24, // ✅ was duplicate, now unique
+      name: "Piyush Dwivedi",
+      department: "Design",
+      position: "Deputy Head",
+      photo: "./members/piyush-dwivedi.jpg",
+      about: "Experienced in designing, use photoshop,canva,figma for making posters and thumbnails",
+      linkedin: "https://www.linkedin.com/in/piyush-dwivedi-408724381/",
+      instagram: "https://www.instagram.com/piyushdwivedi0q",
+    },
   ],
 };
 
