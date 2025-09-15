@@ -27,6 +27,11 @@ export function HeroSection() {
             MSC Recruitment is Live! Apply Now
           </button>
         </Link> */}
+        <a href="https://linktr.ee/mscmsit" target="_blank">
+          <button className="mt-10 px-5 py-2 rounded-full font-semibold text-sm md:text-base tracking-wide bg-gradient-to-br from-white via-blue-100 to-cyan-200 text-[#0078D4] border border-[#0078D4] shadow-sm hover:bg-blue-50 hover:text-blue-500 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-200 cursor-pointer">
+            Join our Community
+          </button>
+        </a>
       </div>
       <AmoebaComponent />
       <CanvasCursor />
