@@ -53,6 +53,7 @@ export const shortlistedData = {
     { name: "Sumit Kumar ", class: "ECE", year: "1st", pokemon: "articuno", skills: 88, confidence: 85 },
     // { name: "Bhoomi Arora ", class: "", year: "", pokemon: "jigglypuff", skills: 83, confidence: 85 },
     { name: "Jhanvhi ", class: "IT", year: "1st", pokemon: "alakazam", skills: 95, confidence: 85 },
+    { name: "Chetali ", class: "CSE", year: "1st", pokemon: "machop", skills: 95, confidence: 85 },
     { name: "Jasnoor Kaur ", class: "IT", year: "1st", pokemon: "butterfree", skills: 91, confidence: 90 },
     
   ],
