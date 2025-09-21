@@ -45,17 +45,18 @@ export const shortlistedData = {
 
 
   design: [
-    { name: "Yashasvi Jain", class: "CSE", year: "1st", pokemon: "lapras", skills: 86, confidence: 88 },
-    { name: "Angel", class: "CSE", year: "1st", pokemon: "pidgeot", skills: 83, confidence: 85 },
-    { name: "Palak soni", class: "BCA", year: "1st", pokemon: "butterfree", skills: 82, confidence: 81 },
-    { name: "Hemang Gupta", class: "IT", year: "1st", pokemon: "golem", skills: 87, confidence: 89 },
-    { name: "Ishita Thakur", class: "CSE", year: "2nd", pokemon: "ninetales", skills: 85, confidence: 84 },
-    { name: "Tarini Bimbrahw", class: "ECE", year: "1st", pokemon: "snorlax", skills: 90, confidence: 92 },
-    { name: "Chetali", class: "CSE", year: "1st", pokemon: "raichu", skills: 88, confidence: 90 },
-    { name: "Pramod Mohanty", class: "IT", year: "1st", pokemon: "gardevoir", skills: 90, confidence: 85 },
-    { name: "Sumit Kumar", class: "IT", year: "1st", pokemon: "jigglypuff", skills: 88, confidence: 95 },
-    { name: "Diwakar Gupta", class: "ECE", year: "1st", pokemon: "vaporeon", skills: 91, confidence: 87 },
+    { name: "Chahat ", class: "CSE", year: "1st", pokemon: "eevee", skills: 83, confidence: 85 },
+    { name: "VARUN SHARMA ", class: "CSE", year: "1st", pokemon: "lapras", skills: 83, confidence: 85 },
+    // { name: "Jaskeerat ", class: "", year: "", pokemon: "pidgeot", skills: 83, confidence: 85 },
+    { name: "Pramod Mohanty ", class: "IT", year: "1st", pokemon: "charizard", skills: 83, confidence: 85 },
+    { name: "Diwakar Gupta ", class: "ECE", year: "1st", pokemon: "squirtle", skills: 83, confidence: 85 },
+    { name: "Sumit Kumar ", class: "ECE", year: "1st", pokemon: "articuno", skills: 83, confidence: 85 },
+    // { name: "Bhoomi Arora ", class: "", year: "", pokemon: "jigglypuff", skills: 83, confidence: 85 },
+    { name: "Jhanvhi ", class: "IT", year: "1st", pokemon: "alakazam", skills: 83, confidence: 85 },
+    { name: "Jasnoor Kaur ", class: "IT", year: "1st", pokemon: "butterfree", skills: 82, confidence: 81 },
+    
   ],
+
 
   pr: [
     { name: "Addi Jain", class: "ECE", year: "1st", pokemon: "pikachu", skills: 80, confidence: 82 },
@@ -81,8 +82,10 @@ export const shortlistedData = {
   { name: "Deepansh Chaudhary", class: "ECE", year: "2nd", pokemon: "dragonite", skills: 89, confidence: 92 },
   { name: "Lakshit", class: "ECE", year: "2nd", pokemon: "machamp", skills: 87, confidence: 90 },
   { name: "Mansi Jha", class: "ECE", year: "2nd", pokemon: "venusaur", skills: 86, confidence: 88 },
+  { name: "Avichal Das", class: "CSE", year: "1st", pokemon: "dragonite", skills: 86, confidence: 95 },
   { name: "Shiney Sharma", class: "ECE", year: "1st", pokemon: "alakazam", skills: 84, confidence: 86 },
   { name: "Pratush Shukla", class: "CSE", year: "2nd", pokemon: "blastoise", skills: 88, confidence: 90 },
+  { name: "Abuzaid", class: "CSE", year: "2nd", pokemon: "vaporeon", skills: 98, confidence: 98 },
   { name: "Shivansh Pandey", class: "ECE", year: "1st", pokemon: "zapdos", skills: 85, confidence: 87 },
   { name: "Dhananjay", class: "CSE", year: "1st", pokemon: "moltres", skills: 86, confidence: 89 },
   { name: "Gagan Rana", class: "BCA", year: "—", pokemon: "vaporeon", skills: 87, confidence: 89 },
