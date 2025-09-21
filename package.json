@@ -13,6 +13,8 @@
     "@react-three/drei": "^10.7.3",
     "@react-three/fiber": "^9.3.0",
     "@tailwindcss/vite": "^4.1.12",
+    "canvas-confetti": "^1.9.3",
+    "fireworks-js": "^2.10.8",
     "framer-motion": "^12.23.12",
     "lucide-react": "^0.540.0",
     "react": "^19.1.1",

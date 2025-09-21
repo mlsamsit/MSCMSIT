@@ -15,6 +15,7 @@ const Navbar = () => {
     { name: 'About Us', path: '/', hasDropdown: false, scrollTo: 'about' }, // Special case for scrolling
     { name: 'Events', path: '/events', hasDropdown: false, scrollTo: null },
     { name: 'Blogs', path: 'https://dev.to/mscmsit', hasDropdown: false, scrollTo: null },
+    { name: 'Core Members', path: '/coremembers', hasDropdown: false, scrollTo: null },
     { name: 'Members', path: '/members', hasDropdown: false, scrollTo: null },
     { name: 'Projects', path: '/projects', hasDropdown: false, scrollTo: null },
   ];

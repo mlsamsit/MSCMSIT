@@ -9,6 +9,7 @@ import About from './pages/About/index.jsx'
 import Projects from './pages/Projects/index.jsx'
 import Members from './pages/Members/index.jsx'
 import JoinMSC from "./pages/JoinMSC/index.jsx"
+import SelectedMembers from "./pages/SelectedMembers/index.jsx"
 
 const router = createBrowserRouter([
   {
@@ -32,8 +33,12 @@ const router = createBrowserRouter([
         element: <Projects/>
       },
       {
-        path: "/members",
+        path: "/coremembers",
         element: <Members/>
+      },
+      {
+        path: "/members",
+        element: <SelectedMembers/>
       },
       // {
       //   path:"/joinmsc",
