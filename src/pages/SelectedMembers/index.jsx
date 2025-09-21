@@ -139,7 +139,6 @@ export default function Index() {
 
   return (
     <div className="min-h-screen relative bg-white tracking-tighter">
-      {/* Hero Section */}
       <div className="relative pt-24 pb-16 overflow-hidden">
         <div className="absolute inset-0 bg-[#0078D4]"></div>
         <div
@@ -155,13 +154,13 @@ export default function Index() {
           <Pokeball className="absolute top-1/2 left-1/2 -translate-x-1/2 w-40 h-40 opacity-10 animate-float-slower" />
         </div>
         <div className="relative z-10 container mx-auto px-4 py-16 text-center">
-          <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 border border-white/20">
+          <div className="inline-flex  items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 border border-white/20">
             <Star className="w-4 h-4 text-white" />
             <span className="text-white text-sm font-medium">Shortlisted Members</span>
           </div>
           <button
             onClick={triggerCelebration}
-            className="inline-flex md:ml-5 mt-2 md:mt-0 focus-none items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-12 py-2 border border-white/20"
+            className="inline-flex md:ml-5 animate-pulse cursor-pointer  mt-2 md:mt-0 focus-none items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-12 py-2 border border-white/20"
           >
             <PartyPopper className="w-4 h-4 text-white"/>
             <span className="text-white text-sm font-medium">Celebrate</span>
@@ -188,7 +187,6 @@ export default function Index() {
         </div>
       </div>
 
-      {/* Filters */}
       <div className="container mx-auto px-4 -mt-10 relative z-20">
         <div className="bg-white shadow-2xl rounded-2xl border border-gray-100 p-3">
           <div className="flex flex-wrap justify-center gap-2">
@@ -222,7 +220,6 @@ export default function Index() {
         </div>
       </div>
 
-      {/* Member Cards */}
       <div className="container mx-auto px-4 py-12">
         {isLoading ? (
           <div className="flex flex-col items-center justify-center h-64">
