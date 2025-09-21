@@ -50,7 +50,7 @@ const CandidateCard = ({ member }) => {
   return (
     <div className="p-6 rounded-xl border border-gray-200 shadow-lg bg-gradient-to-br from-[#0078D4]/10 to-white hover:scale-105 transition-all">
       <h3 className="text-xl font-bold text-[#0078D4] mb-1">{member.name}</h3>
-      <p className="text-gray-600 font-medium mb-4">Class {member.class}</p>
+      <p className="text-gray-600 font-medium mb-4">Branch {member.class}  |  {member.year} Year</p>
       {pokemonImg && (
         <img
           src={pokemonImg}
