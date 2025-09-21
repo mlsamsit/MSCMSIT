@@ -45,15 +45,15 @@ export const shortlistedData = {
 
 
   design: [
-    { name: "Chahat ", class: "CSE", year: "1st", pokemon: "eevee", skills: 83, confidence: 85 },
-    { name: "VARUN SHARMA ", class: "CSE", year: "1st", pokemon: "lapras", skills: 83, confidence: 85 },
+    { name: "Chahat ", class: "CSE", year: "1st", pokemon: "eevee", skills: 90, confidence: 94 },
+    { name: "VARUN SHARMA ", class: "CSE", year: "1st", pokemon: "lapras", skills: 85, confidence: 94 },
     // { name: "Jaskeerat ", class: "", year: "", pokemon: "pidgeot", skills: 83, confidence: 85 },
-    { name: "Pramod Mohanty ", class: "IT", year: "1st", pokemon: "charizard", skills: 83, confidence: 85 },
-    { name: "Diwakar Gupta ", class: "ECE", year: "1st", pokemon: "squirtle", skills: 83, confidence: 85 },
-    { name: "Sumit Kumar ", class: "ECE", year: "1st", pokemon: "articuno", skills: 83, confidence: 85 },
+    { name: "Pramod Mohanty ", class: "IT", year: "1st", pokemon: "charizard", skills: 86, confidence: 89 },
+    { name: "Diwakar Gupta ", class: "ECE", year: "1st", pokemon: "squirtle", skills: 83, confidence: 93 },
+    { name: "Sumit Kumar ", class: "ECE", year: "1st", pokemon: "articuno", skills: 88, confidence: 85 },
     // { name: "Bhoomi Arora ", class: "", year: "", pokemon: "jigglypuff", skills: 83, confidence: 85 },
-    { name: "Jhanvhi ", class: "IT", year: "1st", pokemon: "alakazam", skills: 83, confidence: 85 },
-    { name: "Jasnoor Kaur ", class: "IT", year: "1st", pokemon: "butterfree", skills: 82, confidence: 81 },
+    { name: "Jhanvhi ", class: "IT", year: "1st", pokemon: "alakazam", skills: 95, confidence: 85 },
+    { name: "Jasnoor Kaur ", class: "IT", year: "1st", pokemon: "butterfree", skills: 91, confidence: 90 },
     
   ],
 
