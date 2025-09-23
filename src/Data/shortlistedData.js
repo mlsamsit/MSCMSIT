@@ -82,7 +82,7 @@ export const shortlistedData = {
     { name: "Harsh Deshwal", class: "CSE", year: "2nd", pokemon: "Arceus ", skills: 90, confidence: 92 },
     { name: "Pranjal ", class: "ECE", year: "2nd", pokemon: "gyarados", skills: 83, confidence: 85 },
     { name: "Deepansh Chaudhary", class: "ECE", year: "2nd", pokemon: "dragonite", skills: 89, confidence: 92 },
-    { name: "Lakshit", class: "ECE", year: "2nd", pokemon: "machamp", skills: 87, confidence: 90 },
+    { name: "Lakshit Kaushik", class: "ECE", year: "2nd", pokemon: "machamp", skills: 87, confidence: 90 },
     { name: "Mansi Jha", class: "ECE", year: "2nd", pokemon: "venusaur", skills: 86, confidence: 88 },
     { name: "Avichal Das", class: "CSE", year: "1st", pokemon: "snorlax", skills: 86, confidence: 95 },
     { name: "Shiney Sharma", class: "ECE", year: "1st", pokemon: "alakazam", skills: 84, confidence: 86 },
@@ -155,7 +155,6 @@ export const shortlistedData = {
 
 
 
-// categories with emoji icons + count
 export const shortlistedCategories = [
   {
     id: "all",
@@ -219,7 +218,6 @@ export const shortlistedCategories = [
   },
 ];
 
-// optional: department descriptions
 export const shortlistedInfo = {
   webdev: {
     title: "Web Development",
