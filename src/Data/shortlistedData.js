@@ -71,6 +71,7 @@ export const shortlistedData = {
     { name: "Ojas Sahni", class: "IT", year: "1st", pokemon: "jigglypuff", skills: 81, confidence: 83 },
     { name: "Thrisha Joshi", class: "IT", year: "2nd", pokemon: "vulpix", skills: 84, confidence: 86 },
     { name: "Yuvraj Singh", class: "IT", year: "1st", pokemon: "togepi", skills: 79, confidence: 82 },
+    { name: "Amisha dewan", class: "ECE", year: "1st", pokemon: "oddish", skills: 79, confidence: 82 },
   ],
 
 
