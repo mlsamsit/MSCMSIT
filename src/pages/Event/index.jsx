@@ -7,6 +7,19 @@ const EventsPage = () => {
   const upcomingEvents = [
     {
       id: '1',
+      title: 'Ctrl+Alt+Vibe - Hackathon',
+      date: '2025-11-21',
+      time: '8:00 AM - 4:30 PM',
+      location: 'MSIT - 06 Seminar Hall',
+      description: 'A high-energy innovation hackathon designed to unlock your creativity, push your technical limits, and help you vibe with like-minded problem solvers as you build futuristic solutions in just 24 hours.',
+      category: 'Hackathon',
+      attendees: 150,
+      image: 'https://ctrlaltvibe.devfolio.co/_next/image?url=https%3A%2F%2Fassets.devfolio.co%2Fhackathons%2F4ab65cc19d21495d8d95356ba2e67b06%2Fassets%2Fcover%2F56.png&w=1440&q=100',
+      tags: ['Hackathon', 'Innovation', 'competition','Teamwork'],
+      learnMore:"https://ctrlaltvibe.devfolio.co/"
+    },
+    {
+      id: '2',
       title: 'Final Push: Career Session',
       date: '2024-08-28',
       time: '10:00 AM - 12:00 PM',
@@ -18,7 +31,7 @@ const EventsPage = () => {
       tags: ['Career', 'Resume', 'LinkedIn']
     },
     {
-      id: '2',
+      id: '3',
       title: 'The Ideathon',
       date: '2024-10-03',
       time: 'All Day',
@@ -30,7 +43,7 @@ const EventsPage = () => {
       tags: ['Ideathon', 'Innovation', 'Teamwork']
     },
     {
-      id: '3',
+      id: '4',
       title: 'Office Visit / Speaker Panel',
       date: '2024-10-17',
       time: 'Full Day (Oct 17–18)',
@@ -195,9 +208,20 @@ const EventsPage = () => {
             <span key={index} className="text-xs bg-[#0078D4]/10 text-[#0078D4] px-2 py-1 rounded-full">{tag}</span>
           ))}
         </div>
-        <div className="text-[#0078D4] text-sm font-medium flex items-center cursor-pointer hover:underline">
-          Learn More <ChevronRight size={16} />
-        </div>
+        {event.learnMore ? (
+          <a
+            href={event.learnMore}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#0078D4] text-sm font-medium flex items-center hover:underline"
+          >
+            Learn More <ChevronRight size={16} />
+          </a>
+        ) : (
+          <div className="text-[#0078D4] text-sm font-medium flex items-center cursor-pointer hover:underline">
+            Learn More <ChevronRight size={16} />
+          </div>
+        )}
       </div>
     </div>
   );
