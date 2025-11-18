@@ -8,8 +8,8 @@ export function HeroSection() {
 
   const hack = {
     name: "CTRL + ALT + VIBE",
-    date: "December 2025",
-    location: "MSIT, Janakpuri",
+    date: "21st November 2025",
+    location: "MSIT - 06 Seminal Hall ",
     img: "https://ctrlaltvibe.devfolio.co/_next/image?url=https%3A%2F%2Fassets.devfolio.co%2Fhackathons%2F4ab65cc19d21495d8d95356ba2e67b06%2Fassets%2Fcover%2F56.png&w=1440&q=100",
     link: "https://ctrlaltvibe.devfolio.co/",
   };
@@ -24,7 +24,7 @@ export function HeroSection() {
             <div className="flex justify-end p-3">
               <button
                 onClick={() => setIsOpen(false)}
-                className="text-gray-600 hover:text-red-500 text-xl font-bold"
+                className="text-gray-600 cursor-pointer hover:scale-105 duration-200 hover:text-red-500 text-xl font-bold"
               >
                 ✕
               </button>
