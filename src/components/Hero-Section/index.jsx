@@ -23,11 +23,22 @@ export function HeroSection() {
       const now = new Date();
       const diff = targetDate - now;
 
-      if (diff <= 0) {
-        setTimeLeft("Event Started 🎉");
+      // Time window after event start (9 hours in ms)
+      const eventDuration = 9 * 60 * 60 * 1000;
+
+      // If countdown finished AND within 9 hours after start
+      if (diff <= 0 && Math.abs(diff) <= eventDuration) {
+        setTimeLeft("Event has Started 🎉");
         return;
       }
 
+      // If event is over after 9 hours
+      if (diff <= -eventDuration) {
+        setTimeLeft("The Event is over now. 🔚");
+        return;
+      }
+
+      // Normal countdown (before start)
       const days = Math.floor(diff / (1000 * 60 * 60 * 24));
       const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
       const mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
@@ -41,6 +52,7 @@ export function HeroSection() {
 
     return () => clearInterval(timer);
   }, []);
+
 
   return (
     <>
@@ -67,7 +79,7 @@ export function HeroSection() {
               />
 
               <div className="text-center md:text-left">
-                <h2 className="text-[2.15rem] font-extrabold bg-gradient-to-r 
+                <h2 className="text-[1.90rem] font-extrabold bg-gradient-to-r 
                     from-white via-blue-100 to-cyan-200 bg-clip-text text-transparent 
                     drop-shadow-xl tracking-tight">
                   {hack.name}
@@ -131,7 +143,7 @@ export function HeroSection() {
           {/* ----------- EVENT PREVIEW WITH COUNTDOWN ---------- */}
           <div
             onClick={() => setIsOpen(true)}
-            className="mt-12 mx-auto w-[90%] md:w-[600px] bg-white/10 backdrop-blur-xl p-4 rounded-xl shadow-lg border border-white/20 cursor-pointer hover:scale-[1.02] transition-all flex items-center gap-4"
+            className="mt-12 mx-auto w-[90%] md:w-[600px] bg-white/10 backdrop-blur-xl p-[0.6rem] rounded-xl shadow-lg border border-white/20 cursor-pointer hover:scale-[1.02] transition-all flex items-center gap-4"
           >
             <img
               src={hack.img}
@@ -140,7 +152,7 @@ export function HeroSection() {
             />
 
             <div className="text-left w-full">
-              <h1 className="text-xl md:text-2xl font-bold text-center text-cyan-200 mb-2 tracking-wide">
+              <h1 className="text-xl md:text-[1.40rem] font-bold text-center text-cyan-200 mb-2 tracking-wide">
                 Upcoming Hackathon
               </h1>
 
