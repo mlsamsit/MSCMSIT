@@ -74,7 +74,7 @@ export function HeroSection() {
             <div className="flex flex-col md:flex-row items-center px-6 pb-6 gap-6 text-white">
               <img
                 src={hack.img}
-                className="w-full md:w-1/2 rounded-xl shadow-xl"
+                className="w-[60%] md:w-1/2 rounded-xl shadow-xl"
                 alt="Hackathon Banner"
               />
 
@@ -90,18 +90,18 @@ export function HeroSection() {
                 </h3>
 
 
-                <p className="mt-2 text-blue-100 leading-relaxed">
+                <p className=" mt-[0.15rem] md:mt-2 text-blue-100 leading-relaxed">
                   📍 {hack.location}
                   <br />🗓️ {hack.date}
                 </p>
 
                 {/* Countdown inside modal */}
-                <p className="mt-3 text-lg font-semibold text-yellow-300">
+                <p className="mt-1 md:mt-3 text-lg font-semibold text-yellow-300">
                   Starts in: {timeLeft}
                 </p>
 
                 <a href={hack.link} target="_blank">
-                  <button className="mt-4 px-5 py-2 rounded-full cursor-pointer font-semibold bg-white text-blue-700 hover:bg-blue-50 transition-all shadow">
+                  <button className="mt-2 md:mt-4 px-5 py-2 rounded-full cursor-pointer font-semibold bg-white text-blue-700 hover:bg-blue-50 transition-all shadow">
                     Register Now →
                   </button>
                 </a>
@@ -152,12 +152,12 @@ export function HeroSection() {
             />
 
             <div className="text-left w-full">
-              <h1 className="text-xl md:text-[1.40rem] font-bold text-center text-cyan-200 mb-2 tracking-wide">
+              <h1 className="text-[1.15rem] md:text-[1.40rem] font-bold text-center text-cyan-200 mb-1 md:mb-2 tracking-wide">
                 Upcoming Hackathon
               </h1>
 
 
-              <h3 className="text-cyan-100 ml-3 text-xl font-semibold">{hack.name}</h3>
+              <h3 className="text-cyan-100 ml-3 text-[1rem] font-semibold">{hack.name}</h3>
 
               <p className="text-blue-100 text-sm">
                 📍 {hack.location} | 🗓️ {hack.date}
