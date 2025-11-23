@@ -10,6 +10,7 @@ import Projects from './pages/Projects/index.jsx'
 import Members from './pages/Members/index.jsx'
 import JoinMSC from "./pages/JoinMSC/index.jsx"
 import SelectedMembers from "./pages/SelectedMembers/index.jsx"
+import { PostHogProvider } from 'posthog-js/react'
 
 const router = createBrowserRouter([
   {
@@ -50,6 +51,16 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router}/>
+    <PostHogProvider
+      apiKey={import.meta.env.VITE_PUBLIC_POSTHOG_KEY}
+      options={{
+        api_host: import.meta.env.VITE_PUBLIC_POSTHOG_HOST,
+        defaults: '2025-05-24',
+        capture_exceptions: true,
+        debug: import.meta.env.MODE === 'development',
+      }}
+    >
+      <RouterProvider router={router}/>
+    </PostHogProvider>
   </StrictMode>,
 )
