@@ -1,5 +1,40 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import ContactSlide from './ContactSlide';
+
+// Inline helper components to keep usage local to this file
+function ContactCTA({ onOpen }) {
+  return (
+    <div className="inline-block bg-white p-6 rounded-xl shadow-lg border border-blue-100 w-full sm:w-auto">
+      <h3 className="text-xl font-semibold text-gray-800 mb-2">Send us an email</h3>
+      <p className="text-gray-600 mb-4">Have questions? Reach out and we'll reply via email.</p>
+      <button onClick={() => {
+        // attempt to open the hidden toggle button created by ContactSlideWrapper
+        const el = document.getElementById('__open-contact-slide__');
+        if (el) el.click();
+        else if (typeof onOpen === 'function') onOpen();
+      }} className="bg-[#0078D4] hover:bg-blue-700 text-white px-5 py-2 rounded-md transition-colors duration-300 flex items-center mx-auto">
+        <span>Send us email</span>
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M2.94 6.94a1.5 1.5 0 00-.44 1.06v6a2 2 0 002 2h11a2 2 0 002-2v-6a1.5 1.5 0 00-.44-1.06l-6-6a1.5 1.5 0 00-2.12 0l-6 6z" />
+        </svg>
+      </button>
+    </div>
+  );
+}
+
+function ContactSlideWrapper() {
+  const [open, setOpen] = React.useState(false);
+  return (
+    <>
+      <ContactSlide isOpen={open} onClose={() => setOpen(false)} />
+      {/* Expose a global event to open the slide from ContactCTA button via DOM event (keeps file-local wiring simple) */}
+      <div style={{ display: 'none' }}>
+        <button id="__open-contact-slide__" onClick={() => setOpen(true)} />
+      </div>
+    </>
+  );
+}
 
 function Partners() {
   // Partner logos data with company name and logo URL
@@ -155,27 +190,34 @@ function Partners() {
           <div className="absolute top-0 bottom-0 right-0 w-5 md:w-24 bg-gradient-to-l from-white to-transparent z-10"></div>
         </div>
 
-        {/* Partnership CTA */}
+        {/* Partnership + Contact CTAs side-by-side */}
         <div className="mt-16 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: 0.3 }}
-            className="inline-block bg-white p-6 rounded-xl shadow-lg border border-blue-100"
+            className="inline-flex flex-col sm:flex-row gap-4 items-stretch justify-center"
           >
-            <h3 className="text-xl font-semibold text-gray-800 mb-2">Interested in partnering with us?</h3>
-            <p className="text-gray-600 mb-4">
-              Join our ecosystem and help shape the next generation of tech talent.
-            </p>
-            <button className="bg-[#0078D4] hover:bg-blue-700 text-white px-5 py-2 rounded-md transition-colors duration-300 flex items-center mx-auto cursor-pointer" onClick={() => window.location.href="https://www.linkedin.com/company/mscmsit/"}>
-              <span>Become a Partner</span>
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
-                <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
-              </svg>
-            </button>
+            <div className="inline-block bg-white p-6 rounded-xl shadow-lg border border-blue-100 w-full sm:w-auto">
+              <h3 className="text-xl font-semibold text-gray-800 mb-2">Interested in partnering with us?</h3>
+              <p className="text-gray-600 mb-4">
+                Join our ecosystem and help shape the next generation of tech talent.
+              </p>
+              <button className="bg-[#0078D4] hover:bg-blue-700 text-white px-5 py-2 rounded-md transition-colors duration-300 flex items-center mx-auto cursor-pointer" onClick={() => window.location.href="https://www.linkedin.com/company/mscmsit/"}>
+                <span>Become a Partner</span>
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                  <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                </svg>
+              </button>
+            </div>
+
+            <ContactCTA />
           </motion.div>
         </div>
+
+        {/* Contact slide component mount point */}
+        <ContactSlideWrapper />
       </div>
     </div>
   );
