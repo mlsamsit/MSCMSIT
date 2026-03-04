@@ -10,13 +10,63 @@ function Projects() {
   // Project data
   const projectsData = [
     {
+      id: 11,
+      title: "College Event Management.",
+      description: "A comprehensive event management system for colleges, built with React, allowing users to create, manage, and RSVP to events seamlessly.",
+      image: "/projects/webassign1(3).png",
+      category: "web",
+      repoUrl: "https://github.com/Devansh2835/EventSpark",
+      liveUrl: "https://event-spark-six.vercel.app/",
+      status: "Live"
+    },
+    {
+      id: 8,
+      title: "Twitter Clone.",
+      description: "A Twitter-like social media platform built with React and Firebase, featuring real-time updates, user authentication, and responsive design.",
+      image: "/projects/twitterclone1.png",
+      category: "web",
+      repoUrl: "https://github.com/charusingla1/twitterclone",
+      liveUrl: "https://twitterclone-beta-ten.vercel.app/index.html",
+      status: "Live"
+    },
+    {w
+      id: 9,
+      title: "ECommerce Website.",
+      description: "A modern e-commerce website built with React and Firebase, featuring product listings, shopping cart functionality, and secure checkout.",
+      image: "/projects/webassign1(1).png",
+      category: "web",
+      repoUrl: "https://github.com/BhavyaPathik/E-com",
+      liveUrl: "https://bhavyapathik.github.io/E-com/#",
+      status: "Live"
+    },
+    {
+      id: 7,
+      title: "A student utilities website.",
+      description: "Tool management website is a comprehensive platform designed to streamline the organization, tracking, and maintenance of tools and equipment. It offers features such as inventory management, check-in/check-out systems, maintenance scheduling, and reporting to ensure efficient tool utilization and reduce downtime.",
+      image: "/projects/mscassign3(1).png",
+      category: "web",
+      repoUrl: "https://github.com/pranshr/msc-3",
+      liveUrl: "https://msc-assignment-3.vercel.app/",
+      status: "Live"
+    },
+    {
+      id: 6,
+      title: "MSC-EventManager",
+      description: "Plan, organize, and explore events with ease. Whether you're hosting a meetup or attending a concert, EventManager brings everything together in one seamless experience.",
+      image: "/projects/webassign2(1).png",
+      category: "web",
+      repoUrl: "https://github.com/mlsamsit/Web-Dev-Assignment-2/tree/main/Garvit%2C%20Nitin%20-%20Event%20Manager",
+      liveUrl: "https://event-manager-alpha-nine.vercel.app/",
+      status: "Live"
+    },
+    {
       id: 1,
       title: "MSC MSIT Official Website",
       description: "A modern website for Microsoft Student Chapter MSIT built with React, Tailwind CSS and Three.js for interactive elements.",
       image: "/projects/web-1.png",
       category: "web",
       repoUrl: "https://github.com/mscmsit/msc-website",
-      liveUrl: "https://mscmsit.in",
+      liveUrl: "https://mlsa.xyz",
       featured: true,
       status: "Live"
     },
@@ -38,6 +88,17 @@ function Projects() {
       category: "ai",
       repoUrl: "https://github.com/Kashika221/resume_to_portfolio",
       liveUrl: "https://launchmyfolio.vercel.app/",
+      status: "Live"
+    },
+    {
+      id: 10,
+      title: "Ecommerce Website.",
+      description: "A modern e-commerce website built with HTML CSS, featuring product listings, shopping cart functionality, and secure checkout.",
+      image: "/projects/webassign1(2).png",
+      category: "web",
+      repoUrl: "https://github.com/mlsamsit/Web-Dev-Assignment-1/tree/main/yourname-year-section",
+      liveUrl: "https://myveryfirst.vercel.app/",
+      featured: true,
       status: "Live"
     },
     {
