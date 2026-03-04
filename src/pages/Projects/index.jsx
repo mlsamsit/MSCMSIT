@@ -29,7 +29,7 @@ function Projects() {
       liveUrl: "https://twitterclone-beta-ten.vercel.app/index.html",
       status: "Live"
     },
-    {w
+    {
       id: 9,
       title: "ECommerce Website.",
       description: "A modern e-commerce website built with React and Firebase, featuring product listings, shopping cart functionality, and secure checkout.",
