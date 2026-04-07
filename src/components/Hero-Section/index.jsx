@@ -7,57 +7,57 @@ export function HeroSection() {
   const [isOpen, setIsOpen] = useState(true);
   const [timeLeft, setTimeLeft] = useState("");
 
-  const targetDate = new Date("2025-11-21T08:00:00"); // 21st Nov 8AM
+  const targetDate = new Date("2026-04-10T08:00:00"); // 10th Apr 8AM
 
-  // const hack = {
-  //   name: "CTRL + ALT + VIBE",
-  //   date: "21st November 2025",
-  //   location: "MSIT - 06 Seminal Hall",
-  //   img: "https://ctrlaltvibe.devfolio.co/_next/image?url=https%3A%2F%2Fassets.devfolio.co%2Fhackathons%2F4ab65cc19d21495d8d95356ba2e67b06%2Fassets%2Fcover%2F56.png&w=1440&q=100",
-  //   link: "https://ctrlaltvibe.devfolio.co/",
-  // };
+  const hack = {
+    name: "HackMSIT 1.0",
+    date: "10th - 11th April, 2026",
+    location: "MSIT",
+    img: "./public/hackmsit.png",
+    link: "https://unstop.com/hackathons/hackmsit-10-msit-1669285",
+  };
 
   // ---------------- COUNTDOWN LOGIC ----------------
-  // useEffect(() => {
-  //   const updateTimer = () => {
-  //     const now = new Date();
-  //     const diff = targetDate - now;
+  useEffect(() => {
+    const updateTimer = () => {
+      const now = new Date();
+      const diff = targetDate - now;
 
-  //     // Time window after event start (9 hours in ms)
-  //     const eventDuration = 9 * 60 * 60 * 1000;
+      // Time window after event start (9 hours in ms)
+      const eventDuration = 9 * 60 * 60 * 1000;
 
-  //     // If countdown finished AND within 9 hours after start
-  //     if (diff <= 0 && Math.abs(diff) <= eventDuration) {
-  //       setTimeLeft("Event has Started 🎉");
-  //       return;
-  //     }
+      // If countdown finished AND within 9 hours after start
+      if (diff <= 0 && Math.abs(diff) <= eventDuration) {
+        setTimeLeft("Event has Started 🎉");
+        return;
+      }
 
-  //     // If event is over after 9 hours
-  //     if (diff <= -eventDuration) {
-  //       setTimeLeft("The Event is over now. 🔚");
-  //       return;
-  //     }
+      // If event is over after 9 hours
+      if (diff <= -eventDuration) {
+        setTimeLeft("The Event is over now. 🔚");
+        return;
+      }
 
-  //     // Normal countdown (before start)
-  //     const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-  //     const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  //     const mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-  //     const secs = Math.floor((diff % (1000 * 60)) / 1000);
+      // Normal countdown (before start)
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      const secs = Math.floor((diff % (1000 * 60)) / 1000);
 
-  //     setTimeLeft(`${days}d : ${hours}h : ${mins}m : ${secs}s`);
-  //   };
+      setTimeLeft(`${days}d : ${hours}h : ${mins}m : ${secs}s`);
+    };
 
-  //   updateTimer();
-  //   const timer = setInterval(updateTimer, 1000);
+    updateTimer();
+    const timer = setInterval(updateTimer, 1000);
 
-  //   return () => clearInterval(timer);
-  // }, []);
+    return () => clearInterval(timer);
+  }, []);
 
 
   return (
     <>
       {/* ------------------ MODAL ------------------ */}
-      {/* {isOpen && (
+       {isOpen && (
         <div className="fixed inset-0 bg-blue-900/50 backdrop-blur-sm flex items-center justify-center z-50">
           <div className="bg-gradient-to-br from-blue-300 to-blue-600 text-white rounded-2xl shadow-2xl w-[90%] md:w-[700px] overflow-hidden animate-fade-in border border-blue-300/20">
 
@@ -85,7 +85,7 @@ export function HeroSection() {
                 </h2>
 
                 <h3 className="text-lg font-medium text-cyan-200">
-                  A vibe coding hackathon
+                  Inovate • Code • Conquer
                 </h3>
 
 
@@ -107,7 +107,7 @@ export function HeroSection() {
             </div>
           </div>
         </div>
-      )} */}
+      )}
 
       {/* ------------------ HERO SECTION ------------------ */}
       <div
