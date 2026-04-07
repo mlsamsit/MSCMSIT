@@ -13,7 +13,7 @@ export function HeroSection() {
     name: "HackMSIT 1.0",
     date: "10th - 11th April, 2026",
     location: "MSIT",
-    img: "./public/hackmsit.png",
+    img: "./hackmsit.png",
     link: "https://unstop.com/hackathons/hackmsit-10-msit-1669285",
   };
 
