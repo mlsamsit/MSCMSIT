@@ -14,7 +14,7 @@ const EventsPage = () => {
       description: 'A high-energy innovation hackathon designed to unlock creativity, push technical limits, and help participants vibe with like-minded problem solvers. Build futuristic solutions in 24 hours and compete with talented developers from across the institute!',
       category: 'Hackathon',
       attendees: 200,
-      image: './public/hackmsit.png',
+      image: './hackmsit.png',
       tags: ['Hackathon', 'Innovation', 'Teamwork', 'Competition'],
       learnMore: 'https://unstop.com/hackathons/hackmsit-10-msit-1669285'
     },
