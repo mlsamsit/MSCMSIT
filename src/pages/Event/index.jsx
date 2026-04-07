@@ -6,6 +6,19 @@ const EventsPage = () => {
 
   const upcomingEvents = [
     {
+      id: 'upcoming-hackmsit',
+      title: 'HackMSIT 1.0',
+      date: '2026-04-10',
+      time: '8:00 AM - 5:00 PM (10th - 11th April, 2 Days)',
+      location: 'MSIT',
+      description: 'A high-energy innovation hackathon designed to unlock creativity, push technical limits, and help participants vibe with like-minded problem solvers. Build futuristic solutions in 24 hours and compete with talented developers from across the institute!',
+      category: 'Hackathon',
+      attendees: 200,
+      image: './public/hackmsit.png',
+      tags: ['Hackathon', 'Innovation', 'Teamwork', 'Competition'],
+      learnMore: 'https://unstop.com/hackathons/hackmsit-10-msit-1669285'
+    },
+    {
       id: '1',
       title: 'Final Push: Career Session',
       date: '2024-08-28',

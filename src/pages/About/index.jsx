@@ -72,7 +72,7 @@ function About() {
     },
     {
       id: 2,
-      heading: "Mission & Vision",
+      heading: "Objective",
       hoverPara: "To bridge academics with industry by equipping students with practical skills and fostering an innovative, collaborative community of future tech leaders.",
       para: [
         {

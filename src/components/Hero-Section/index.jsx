@@ -139,7 +139,7 @@ export function HeroSection() {
           </a>
 
           {/* ----------- EVENT PREVIEW WITH COUNTDOWN ---------- */}
-          {/* <div
+          <div
             onClick={() => setIsOpen(true)}
             className="mt-12 mx-auto w-[90%] md:w-[600px] bg-white/10 backdrop-blur-xl p-[0.6rem] rounded-xl shadow-lg border border-white/20 cursor-pointer hover:scale-[1.02] transition-all flex items-center gap-4"
           >
@@ -166,7 +166,7 @@ export function HeroSection() {
               </p>
             </div>
 
-          </div> */}
+          </div>
         </div>
 
         <AmoebaComponent />
